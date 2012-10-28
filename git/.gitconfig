@@ -1,0 +1,19 @@
+[color]
+	ui = true
+[user]
+	name = Izzet Mustsfaiev
+	email = webdizz@gmail.com
+[core]
+	autocrlf = false
+	excludesfile = /Users/izzetmustafaiev/.gitignore_global
+
+[merge]
+	tool = extMerge
+[mergetool "extMerge"]
+	cmd = ~/dev/tools/bin/extMerge.sh \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Utils/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
