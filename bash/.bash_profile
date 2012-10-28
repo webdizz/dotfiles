@@ -20,6 +20,7 @@ export JBOSS_HOME=$HOME/dev/appservers/jboss-eap-5.1/jboss-as
 
 alias ll='ls -laG'
 alias ctail='grc tail'
+alias aq='aquamacs'
 
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
 
