@@ -1,5 +1,7 @@
 ;; This file is symlinked to '~/Library/Preferences/Aquamacs\ Emacs/customizations.el'
 
+;; Inspired by https://bitbucket.org/thegeekinside/dotfiles/src/f500770dcaca65617ddd62ed53d2974924c7df19/emacs/emacs?at=default
+
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -56,3 +58,15 @@
 (column-number-mode t)
 (set-fringe-style -1)
 (tooltip-mode -1)
+
+
+;; Marmalade
+(add-to-list 'load-path "~/.emacs.d/elpa/")
+(require 'package)
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+;; Scala mode
+(require 'scala-mode-auto)
