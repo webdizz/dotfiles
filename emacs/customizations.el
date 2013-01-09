@@ -1,5 +1,12 @@
 ;; This file is symlinked to '~/Library/Preferences/Aquamacs\ Emacs/customizations.el'
 
+;; Org-mode
+;(add-to-list 'load-path "~/dev/tools/emacs/org-mode/lisp")
+;(add-to-list 'load-path "~/dev/tools/emacs/org-mode/contrib/lisp")
+;(add-to-list 'load-path "~/dev/tools/emacs/org-mode/contrib/babel/langs")
+;(autoload 'org-mode "org-mode" "Org editing mode." t)
+
+
 ;; Inspired by https://bitbucket.org/thegeekinside/dotfiles/src/f500770dcaca65617ddd62ed53d2974924c7df19/emacs/emacs?at=default
 
 (custom-set-variables
@@ -11,6 +18,7 @@
  '(aquamacs-customization-version-id 215 t)
  '(aquamacs-tool-bar-user-customization nil t)
  '(default-frame-alist (quote ((menu-bar-lines . 1) (foreground-color . "Black") (background-color . "White") (cursor-type . box) (cursor-color . "Red") (internal-border-width . 0) (left-fringe . 1) (right-fringe) (fringe) (vertical-scroll-bars) (tool-bar-lines . 0))))
+ '(display-time-mode t)
  '(global-hl-line-mode t)
  '(global-linum-mode t)
  '(ns-tool-bar-display-mode (quote both) t)
@@ -70,3 +78,29 @@
 
 ;; Scala mode
 (require 'scala-mode-auto)
+
+
+;; Plantuml
+(add-to-list 'load-path "~/dev/tools/emacs/")
+(autoload 'plantuml-mode "plantuml-mode" "Plantuml editing mode." t)
+(add-to-list 'auto-mode-alist '("\.pml$" . plantuml-mode))
+(add-to-list 'auto-mode-alist '("\.pml$" . plantuml-mode))
+
+(defvar plantuml-jar-path (expand-file-name "~/dev/tools/plantuml.jar"))
+
+;; active Org-babel languages
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(;; other Babel languages
+   (plantuml . t)))
+(setq org-plantuml-jar-path
+      (expand-file-name "~/dev/tools/plantuml.jar"))
+
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 55)
+
+;; enable saving opened files on exit
+(desktop-save-mode 1)
+(setq history-length 250)
+(add-to-list 'desktop-globals-to-save 'file-name-history)
