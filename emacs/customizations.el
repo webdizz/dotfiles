@@ -110,6 +110,15 @@
  (set-frame-parameter (selected-frame) 'alpha '(97 70))
  (add-to-list 'default-frame-alist '(alpha 97 70))
 
+;; enable YAML mode
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+
+;; enable JSON mode
+(require 'json-mode)
+(add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
+
+;; enable JS2 mode
+(require 'js2-mode)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
