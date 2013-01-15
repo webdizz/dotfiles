@@ -85,6 +85,7 @@
 (autoload 'plantuml-mode "plantuml-mode" "Plantuml editing mode." t)
 (add-to-list 'auto-mode-alist '("\.pml$" . plantuml-mode))
 (add-to-list 'auto-mode-alist '("\.pml$" . plantuml-mode))
+(global-set-key (kbd "C-x C-]") 'plantuml-render-buffer)
 
 (defvar plantuml-jar-path (expand-file-name "~/dev/tools/plantuml.jar"))
 
@@ -104,3 +105,7 @@
 (desktop-save-mode 1)
 (setq history-length 250)
 (add-to-list 'desktop-globals-to-save 'file-name-history)
+
+;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
+ (set-frame-parameter (selected-frame) 'alpha '(97 70))
+ (add-to-list 'default-frame-alist '(alpha 97 70))
