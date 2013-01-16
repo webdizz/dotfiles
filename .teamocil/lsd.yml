@@ -1,0 +1,17 @@
+windows:
+  - name: "lsd.vm"
+    clear: true
+    options:
+      synchronize-panes: false
+    root: "~/dev/projects/lsd"
+    splits:
+      - cmd: ["ssh root@192.168.56.2"]
+      - cmd: ["ssh root@192.168.56.2"]
+        height: 50
+  - name: "lsd"
+    clear: true
+    options:
+      synchronize-panes: false
+    root: "~/dev/projects/lsd"
+    splits:
+      - cmd: "pwd"
