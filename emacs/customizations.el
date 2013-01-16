@@ -122,3 +122,38 @@
 ;; enable JS2 mode
 (require 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+
+;;;; Dired mode
+;; do not open new buffer on entering directory
+(add-hook 'dired-mode-hook
+ (lambda ()
+  (define-key dired-mode-map (kbd "<return>")
+    'dired-find-alternate-file) ; was dired-advertised-find-file
+  (define-key dired-mode-map (kbd "^")
+    (lambda () (interactive) (find-alternate-file "..")))
+  ; was dired-up-directory
+ ))
+;; How to copy from one dired dir to the next dired dir shown in a split window?
+(setq dired-dwim-target t)
+;; allow dired to be able to delete or copy a whole dir.
+;; “always” means no asking. “top” means ask once. Any other symbol means ask each and every time for a dir and subdir.
+(setq dired-recursive-copies (quote always))
+(setq dired-recursive-deletes (quote top))
+
+;; move line up
+(defun move-line-up ()
+  (interactive)
+  (transpose-lines 1)
+  (previous-line 2))
+
+(global-set-key [(A-M-up)] 'move-line-up)
+
+;; move line down
+(defun move-line-down ()
+  (interactive)
+  (next-line 1)
+  (transpose-lines 1)
+  (previous-line 1))
+
+(global-set-key [(A-M-down)] 'move-line-down)
