@@ -9,12 +9,18 @@ PATH=$PATH:$HOME/dev/tools/bin
 PATH=$PATH:$HOME/dev/tools/sbt/bin
 PATH=$PATH:$HOME/dev/tools/opends/bin
 PATH=$PATH:$HOME/dev/tools/mongodb/bin
+PATH=$PATH:$HOME/dev/tools/gradle/bin
+PATH=$PATH:$HOME/dev/tools/scala/bin
+PATH=$PATH:$HOME/dev/tools/pmd/bin
+PATH=$PATH:$HOME/dev/tools/maestro-cli/bin
 PATH=$PATH:$HOME/dev/tools/android_sdk/tools
 PATH=$PATH:$HOME/dev/tools/android_sdk/platform-tools
 PATH=$PATH:$HOME/dev/appservers/ATG/home/bin
 PATH=$PATH:/opt/subversion/bin
 PATH=$PATH:/Applications/Utils/kdiff3.app/Contents/MacOS
 PATH=$PATH:/usr/local/mysql/bin
+PATH=/usr/local/git/bin:$PATH
+PATH=$PATH:/Applications/Vagrant/bin
 
 export PATH
 
@@ -41,6 +47,10 @@ export SB_ENABLED=true
 
 
 source $HOME/dev/tools/bin/git-completion.bash
+source /opt/boxen/env.sh
 
 #source $HOME/.grcat
 #source "`brew --prefix`/etc/grc.bashrc"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

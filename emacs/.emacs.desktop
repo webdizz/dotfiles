@@ -1,0 +1,172 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Apr  4 12:57:35 2013
+;; Desktop file format version 206
+;; Emacs version 24.3.50.3
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("desk" "lan" "templ" "land" "courses" "c2g" "../" "img" "tasil" "tasi" "glyphicons-halflings.png" "homepage" "helm" "projectile" "nav" "DR"))
+(setq regexp-search-ring '("nav" "extgen\\.template\\.path" "depen"))
+(setq register-alist (list (list 213465889 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk 1 (get-buffer "views.py")))) mk)) (list 213465879 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk 1 (get-buffer "views.py")))) mk)) '(48 . "create")))
+(setq file-name-history '("~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/MQ/recipes/default.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/jenkins/recipes/default.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/atg/recipes/default.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/oracle/attributes/default.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/oracle/recipes/oracle_install.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/oracle/recipes/create_database.rb" "~/dev/projects/KITS-DRWN/impl/vm/KITS-App_ATG-Dev/env-install/profiles.yaml" "~/dev/projects/KITS-DRWN/impl/vm/KITS-App_ATG-Dev/env-install/target/sql/create_users.sql" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/templates/landing/landing.html" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/courses/landing/views.py" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/.gitignore" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/database.py" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/c2g/static/css/tasil/main.css" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/c2g/static/css/tasil/bootstrap.min.css" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/templates/videos/draft/video_list_item.html" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/c2g/static/css/tasil/bootstrap.css" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/c2g/static/css/tasil/bootstrap.min.css" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/c2g/__init__.py" "~/dev/dotfiles/emacs/customizations.el" "~/dev/projects/EPM-RQCC/impl/vm/tasil/main/c2g/static/css/tasil/main.css" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/dev/dotfiles/README.md" "~/dev/projects/EPM-RQCC/impl/tasil/main/courses/views.py" "~/dev/dotfiles/vim/.vim/colors/ir_black.vim" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/Library/Application Support/Aquamacs Emacs/elpa/helm-ls-git-20130317.2028/helm-ls-git-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/helm-projectile-20130131.2338/helm-projectile-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/projectile-20130228.245/projectile-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/s-20130320.1524/s-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dash-20130311.1525/dash-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/tromey/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/melpa/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/gnu/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/marmalade/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/project-local-variables-readme.txt" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/tromey/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/melpa/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/gnu/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/marmalade/archive-contents" "~/dev/projects/EPM-RQCC/impl/test_vimeo.py" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/dev/projects/CTCO-ECOM/git-svn-showcase/show-case-git/HELLO.md" "~/dev/projects/CTCO-ECOM/git-svn-showcase/show-case-svn/trunk/README.md" "~/.ido.last" "/Volumes/dev/hybris/config/tomcat/conf/server.xml" "/Volumes/dev/hybris/bin/platform/tomcat-6/conf/context.xml" "/Volumes/dev/hybris/config/tomcat/conf/web.xml" "/Volumes/dev/hybris/config/localextensions.xml" "/Volumes/dev/hybris/bin/custom/jmspoc/extensioninfo.xml" "/Volumes/dev/hybris/bin/ext-template/ycommercewebservices/web/webroot/WEB-INF/web.xml" "/Volumes/dev/hybris/bin/ext-template/jmssample/resources/jmssample-spring.xml" "/Volumes/dev/hybris/config/tcServer/conf/server.xml" "/Volumes/dev/hybris/config/tcServer/conf/web.xml" "/Volumes/dev/hybris/config/tomcat/conf/wrapper.conf" "/Volumes/dev/hybris/bin/platform/hybrisserver.sh" "/Volumes/dev/apache-tomcat-6.0.36/conf/context.xml" "/Volumes/dev/hybris/config/local.properties" "/Volumes/dev/apache-tomcat-6.0.36/conf/web.xml" "/Volumes/dev/apache-tomcat-6.0.36/conf/server.xml" "/Volumes/dev/apache-tomcat-6.0.36/conf/Catalina/localhost/host-manager.xml" "/Volumes/dev/apache-tomcat-6.0.36/conf/Catalina/localhost/manager.xml" "/Volumes/dev/hybris/bin/ext-template/jmssample/resources/jmssample-test-spring.xml" "/Volumes/dev/hybris/bin/ext-template/jmssample/src/de/hybris/platform/jmssample/send/DefaultWarehouseMessageSenderGateway.java" "/Volumes/dev/hybris/bin/ext-template/jmssample/src/de/hybris/platform/jmssample/message/WarehouseMessage.java" "~/dev/projects/lsd/impl/env/auto/profile.properties" "/Volumes/dev/hybris/bin/ext-template/jmssample/src/de/hybris/platform/jmssample/client/WarehouseClientAsyncStarter.java" "~/dev/projects/agold/impl/core/src/main/resources/META-INF/spring/core-jms-context.xml" "~/dev/projects/agold/impl/si/src/main/resources/META-INF/spring/si-io-context-template.xml" "~/dev/projects/agold/impl/si/src/main/resources/META-INF/spring/si-application-context.xml" "/Volumes/dev/hybris/bin/ext-template/jmssample/extensioninfo.xml" "/Volumes/dev/hybris/bin/" "/private/var/chef/roles/vm.json" "/private/var/chef/Vagrantfile" "/private/var/chef/cookbooks/centos/recipes/default.rb" "/Volumes/dev/apache-tomcat-6.0.36/bin/startup.sh" "~/dev/projects/CTCO-ECOM/impl/hybris-extensions-ctc/README.md" "/Volumes/dev/_tmp/cq-ecommerce/META-INF/MANIFEST.MF" "/Volumes/dev/_tmp/cq-ecommerce/OSGI-INF/serviceComponents.xml" "/Users/izzetmustafaiev/dev/projects/CTCO-ECOM/_tmp/cq-commerce-hybris-impl/META-INF/MANIFEST.MF" "~/dev/projects/CTCO-ECOM/_tmp/cq-commerce-hybris-impl/OSGI-INF/serviceComponents.xml" "~/dev/projects/CTCO-ECOM/_tmp/META-INF/maven/com.adobe.cq.commerce/cq-hybris-content/pom.xml" "~/dev/projects/CTCO-ECOM/_tmp/META-INF/INDEX.LIST" "~/.ido.last" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/tasil/recipes/default.rb" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/class2go-deploy/recipes/default.rb" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/class2go-deploy/recipes/default.rb" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/class2go-deploy/recipes/default.rb" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/CTCO-ECOM/impl/.gitignore" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/centos/recipes/user.rb" "/Users/izzetmustafaiev/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/centos/templates/default/known_hosts" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/centos/recipes/user.rb" "~/dev/projects/EPM-RQCC/impl/tasil/chef/" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/class2go-deploy/recipes/default.rb" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/.ido.last" "/Volumes/dev/hybris/bin/custom/tst/web/testsrc/org/training/controller/CustomersControllerUnitTest.java" "/Volumes/dev/hybris/bin/custom/tst/web/src/org/training/controller/ProductsController.java" "/Volumes/dev/hybris/bin/custom/tst/.classpath" "/Volumes/dev/hybris/bin/platform/extgen/project.properties" "/Volumes/dev/hybris/config/local.properties" "~/dev/projects/EPM-RQCC/impl/tasil/chef/cookbooks/class2go-deploy/recipes/default.rb" "~/dev/projects/EPM-CDP/Jenkin-CI/devops/roles/jenkins.json" "~/dev/projects/EPM-CDP/Jenkin-CI/devops/roles/java.json" "/Users/izzetmustafaiev/dev/projects/EPM-CDP/Jenkin-CI/devops/local_node.json" "~/dev/projects/EPM-RQCC/impl/tasil/chef/roles/vm.json" "~/dev/projects/EPM-RQCC/impl/tasil/chef/setup_deploy_links.sh" "~/dev/projects/CTCO-ECOM/impl/env/mount_env.bat" "~/Library/Application Support/Aquamacs Emacs/elpa/ibuffer-vc-20121217.826/ibuffer-vc-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ibuffer-vc-readme.txt" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/tromey/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/melpa/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/gnu/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/marmalade/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/helm-20130317.247/helm-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/restclient-20130227.1916/restclient-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/color-theme-solarized-20120301/color-theme-solarized-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/zencoding-mode-0.5.1/zencoding-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/save-packages-0.20121012/save-packages-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired-details+-1.0/dired-details+-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired-details-1.3.1/dired-details-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired+-21.2/dired+-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/xml-gen-0.4/xml-gen-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/yaml-mode-0.0.7/yaml-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/tabbar-2.0.1/tabbar-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/alpha-1.0/alpha-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ssh-config-mode-1.13/ssh-config-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/sql-indent-1.10/sql-indent-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-tools-0.1.0/ruby-tools-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-mode-1.1/ruby-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-end-0.2.0/ruby-end-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-block-0.0.11/ruby-block-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pointback-0.2/pointback-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pony-mode-0.2/pony-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/watch-buffer-1.0.1/watch-buffer-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pabbrev-3.1/pabbrev-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ntcmd-1.0/ntcmd-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/mongo-0.5/mongo-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/langtool-1.2.0/langtool-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/jump-char-0.1/jump-char-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/js2-mode-20090814/js2-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/json-1.2/json-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/json-mode-0.1.2/json-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/idle-highlight-mode-1.1.2/idle-highlight-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/idle-highlight-1.0/idle-highlight-autoloads.el" "~/dev/projects/lsd/impl/env/auto/configureProfile.py" "~/dev/projects/lsd/impl/env/Vagrantfile" "~/dev/projects/lsd/impl/env/auto/qa_profile.properties" "~/dev/projects/lsd/impl/env/auto/ant/was.xml" "~/dev/projects/lsd/impl/ejb/src/main/resources/META-INF/ejb-jar.xml" "~/dev/projects/lsd/impl/pom.xml" "~/dev/projects/lsd/impl/dao/pom.xml" "~/dev/projects/lsd/impl/ear/pom.xml" "~/dev/projects/lsd/impl/ejb/pom.xml" "~/dev/projects/lsd/impl/war/pom.xml" "~/dev/projects/lsd/impl/test-war/pom.xml" "~/dev/projects/EPM-RQCC/impl/tasil/main/templates/videos/view.html" "~/dev/projects/KITS-DRWN/impl/capify/capfile" "~/dev/projects/KITS-DRWN/impl/capify/test_deploy.rb" "~/dev/projects/vboxes/vagrant-samba/vagrant-samba.gemspec" "~/dev/projects/vboxes/vagrant-samba/lib/vagrant-samba/version.rb" "~/dev/projects/vboxes/vagrant-samba/spec/spec_helper.rb" "~/dev/projects/vboxes/vagrant-samba/lib/vagrant-samba/config.rb" "~/dev/projects/vboxes/vagrant-samba/spec/vagrant-samba/config_spec.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/gerrit/attributes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/centos/attributes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/jenkins/attributes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/roles/jenkins.json" "~/dev/projects/CTCO-ECOM/impl/env/wadl.xml" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/hybris/templates/default/hybris.erb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/jenkins/recipes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/gerrit/recipes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/local_node.json" "~/Downloads/Markup/home.html" "~/dev/projects/EPM-CDP/Jenkin-CI/devops/local_node.json" "~/dev/projects/EPM-CDP/Jenkin-CI/devops/Vagrantfile" "~/dev/projects/EPM-RQCC/impl/tasil/main/templates/base.html" "~/dev/projects/CTCO-ECOM/impl/env/roles/gerrit.json" "~/dev/projects/KITS-DRWN/impl/app/env-install/profiles.yaml" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/db.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/cap_deployment.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/deployment.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/cap_servers.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/jboss/recipes/default.rb" "/private/var/chef/dev_node.json" "/private/var/chef/roles/dev.json" "/private/var/chef/node.json" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/CTCO-ECOM/impl/env/Vagrantfile" "~/dev/projects/vboxes/vagrant-samba/lib/vagrant-samba.rb" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/Library/Application Support/Aquamacs Emacs/elpa/helm-20130317.247/helm-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/tromey/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/melpa/archive-contents" "~/Library/Application Support/Aquamacs Emacs/elpa/archives/marmalade/archive-contents" "~/dev/dotfiles/emacs/customizations.el" "~/Library/Application Support/Aquamacs Emacs/elpa/restclient-20130227.1916/restclient-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/color-theme-solarized-20120301/color-theme-solarized-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/zencoding-mode-0.5.1/zencoding-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/save-packages-0.20121012/save-packages-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired-details+-1.0/dired-details+-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired-details-1.3.1/dired-details-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired+-21.2/dired+-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/xml-gen-0.4/xml-gen-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/yaml-mode-0.0.7/yaml-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/tabbar-2.0.1/tabbar-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/alpha-1.0/alpha-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ssh-config-mode-1.13/ssh-config-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/sql-indent-1.10/sql-indent-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-tools-0.1.0/ruby-tools-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-mode-1.1/ruby-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-end-0.2.0/ruby-end-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-block-0.0.11/ruby-block-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pointback-0.2/pointback-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pony-mode-0.2/pony-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/watch-buffer-1.0.1/watch-buffer-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pabbrev-3.1/pabbrev-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ntcmd-1.0/ntcmd-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/mongo-0.5/mongo-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/langtool-1.2.0/langtool-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/jump-char-0.1/jump-char-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/js2-mode-20090814/js2-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/json-1.2/json-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/json-mode-0.1.2/json-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/idle-highlight-mode-1.1.2/idle-highlight-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/idle-highlight-1.0/idle-highlight-autoloads.el" "~/dev/projects/lsd/impl/env/auto/configureProfile.py" "~/dev/projects/lsd/impl/env/Vagrantfile" "~/dev/projects/lsd/impl/env/auto/qa_profile.properties" "~/dev/projects/lsd/impl/env/auto/ant/was.xml" "~/dev/projects/lsd/impl/ejb/src/main/resources/META-INF/ejb-jar.xml" "~/dev/projects/lsd/impl/pom.xml" "~/dev/projects/lsd/impl/dao/pom.xml" "~/dev/projects/lsd/impl/ear/pom.xml" "~/dev/projects/lsd/impl/ejb/pom.xml" "~/dev/projects/lsd/impl/war/pom.xml" "~/dev/projects/lsd/impl/test-war/pom.xml" "~/dev/projects/EPM-RQCC/impl/tasil/main/templates/videos/view.html" "~/dev/projects/KITS-DRWN/impl/capify/capfile" "~/dev/projects/KITS-DRWN/impl/capify/test_deploy.rb" "~/dev/projects/vboxes/vagrant-samba/vagrant-samba.gemspec" "~/dev/projects/vboxes/vagrant-samba/lib/vagrant-samba/version.rb" "~/dev/projects/vboxes/vagrant-samba/spec/spec_helper.rb" "~/dev/projects/vboxes/vagrant-samba/lib/vagrant-samba/config.rb" "~/dev/projects/vboxes/vagrant-samba/spec/vagrant-samba/config_spec.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/gerrit/attributes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/centos/attributes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/jenkins/attributes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/roles/jenkins.json" "~/dev/projects/CTCO-ECOM/impl/env/wadl.xml" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/hybris/templates/default/hybris.erb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/jenkins/recipes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/cookbooks/gerrit/recipes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/local_node.json" "~/Downloads/Markup/home.html" "~/dev/projects/EPM-CDP/Jenkin-CI/devops/local_node.json" "~/dev/projects/EPM-CDP/Jenkin-CI/devops/Vagrantfile" "~/dev/projects/EPM-RQCC/impl/tasil/main/templates/base.html" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/db.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/cap_deployment.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/deployment.rb" "~/dev/projects/KITS-DRWN/impl/app/env-install/src/main/ruby/cap_servers.rb" "~/dev/projects/CTCO-ECOM/impl/env/roles/gerrit.json" "~/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/jboss/recipes/default.rb" "~/dev/projects/CTCO-ECOM/impl/env/Vagrantfile" "~/dev/projects/vboxes/vagrant-samba/lib/vagrant-samba.rb" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/KITS-DRWN/impl/app/env-install/profiles.yaml" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/Library/Application Support/Aquamacs Emacs/elpa/restclient-20130227.1916/restclient-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/color-theme-solarized-20120301/color-theme-solarized-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/zencoding-mode-0.5.1/zencoding-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/save-packages-0.20121012/save-packages-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired-details+-1.0/dired-details+-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired-details-1.3.1/dired-details-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/dired+-21.2/dired+-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/xml-gen-0.4/xml-gen-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/yaml-mode-0.0.7/yaml-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/tabbar-2.0.1/tabbar-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/alpha-1.0/alpha-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ssh-config-mode-1.13/ssh-config-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/sql-indent-1.10/sql-indent-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-tools-0.1.0/ruby-tools-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-mode-1.1/ruby-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-end-0.2.0/ruby-end-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ruby-block-0.0.11/ruby-block-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pointback-0.2/pointback-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pony-mode-0.2/pony-mode-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/watch-buffer-1.0.1/watch-buffer-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/pabbrev-3.1/pabbrev-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/ntcmd-1.0/ntcmd-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/mongo-0.5/mongo-autoloads.el" "~/Library/Application Support/Aquamacs Emacs/elpa/langtool-1.2.0/langtool-autoloads.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/dotfiles/emacs/customizations.el"
+  "customizations.el"
+  'emacs-lisp-mode
+  '(linum-mode flyspell-mode helm-mode)
+  6790
+  '(9159 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/MQ/recipes/default.rb"
+  "default.rb<3>"
+  'ruby-mode
+  '(linum-mode helm-mode)
+  3882
+  '(3629 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "chef"
+  'dired-mode
+  '(linum-mode helm-mode)
+  305
+  '(nil nil)
+  t
+  '("/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/jenkins/recipes/default.rb"
+  "default.rb<2>"
+  'ruby-mode
+  '(linum-mode helm-mode)
+  1191
+  '(1191 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/atg/recipes/default.rb"
+  "default.rb"
+  'ruby-mode
+  '(linum-mode helm-mode)
+  5642
+  '(5642 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/app/env-install/vm/chef/cookbooks/oracle/recipes/create_database.rb"
+  "create_database.rb"
+  'ruby-mode
+  '(linum-mode helm-mode)
+  2394
+  '(2527 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "env-install"
+  'dired-mode
+  '(linum-mode helm-mode)
+  1167
+  '(nil nil)
+  t
+  '("/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/vm/KITS-App_ATG-Dev/env-install/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/vm/KITS-App_ATG-Dev/env-install/profiles.yaml"
+  "profiles.yaml"
+  'yaml-mode
+  '(linum-mode helm-mode)
+  51495
+  '(46859 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/vm/KITS-App_ATG-Dev/env-install/target/sql/create_users.sql"
+  "create_users.sql"
+  'sql-mode
+  '(linum-mode helm-mode)
+  144
+  '(6471 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/EPM-RQCC/impl/vm/tasil/main/templates/landing/landing.html"
+  "landing.html"
+  'html-helper-mode
+  '(auto-fill-mode smart-spacing-mode linum-mode flyspell-mode helm-mode)
+  4016
+  '(3907 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/EPM-RQCC/impl/vm/tasil/main/database.py"
+  "database.py"
+  'python-mode
+  '(linum-mode outline-minor-mode helm-mode)
+  906
+  '(1467 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/EPM-RQCC/impl/vm/tasil/main/c2g/static/css/tasil/main.css"
+  "main.css"
+  'css-mode
+  '(linum-mode helm-mode)
+  1233
+  '(799 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/dev/projects/EPM-RQCC/impl/vm/tasil/main/courses/landing/views.py"
+  "views.py"
+  'python-mode
+  '(linum-mode outline-minor-mode helm-mode)
+  573
+  '(573 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/Library/Application Support/Aquamacs Emacs/scratch buffer"
+  "*scratch*"
+  'text-mode
+  '(auto-fill-mode smart-spacing-mode linum-mode flyspell-mode helm-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8) (truncate-lines)))
+

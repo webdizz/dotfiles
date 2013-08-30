@@ -1,0 +1,29 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Apr  7 11:48:38 2013
+;; Desktop file format version 206
+;; Emacs version 24.3.50.3
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/dev/dotfiles/emacs/" "~/dev/dotfiles/" "~/.emacs.d/desktop/" "~/.ido.last" "~/dev/projects/EPM-RQCC/impl/tasil/local_node.json" "~/dev/projects/KITS-DRWN/impl/app/env-install/profiles.yaml" "~/dev/projects/CTCO-ECOM/dime/canadian-tire/pom.xml" "~/dev/dotfiles/emacs/customizations.el" "~/.emacs.d/desktop/" "~/.ido.last" "~/.emacs.d/desktop/" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/projects/CTCO-ECOM/dime/canadian-tire/pom.xml" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last" "~/dev/dotfiles/emacs/customizations.el" "~/dev/dotfiles/README.md" "~/dev/projects/EPM-RQCC/impl/tasil/main/courses/views.py" "~/dev/dotfiles/vim/.vim/colors/ir_black.vim" "~/dev/dotfiles/emacs/customizations.el" "~/.ido.last"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/izzetmustafaiev/Library/Application Support/Aquamacs Emacs/scratch buffer"
+  "*scratch*"
+  'text-mode
+  '(auto-fill-mode smart-spacing-mode linum-mode flyspell-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8) (truncate-lines)))
+

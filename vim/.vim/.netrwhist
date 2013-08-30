@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/izzetmustafaiev/.ssh'
 let g:netrw_dirhist_2='/Users/izzetmustafaiev/dev/projects/KITS-DRWN/impl/app/kingfisher/base/.settings'
+let g:netrw_dirhist_3='/Users/izzetmustafaiev/dev/projects/CTCO-ECOM/ctco-ecom-cq/canadian-tire/canadian-tire-services'
+let g:netrw_dirhist_4='/Users/izzetmustafaiev/dev/projects/CTCO-ECOM/ctco-ecom-cq/canadian-tire'
