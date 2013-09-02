@@ -1,4 +1,3 @@
-
 PATH=$HOME/dev/tools/mvn/bin:$PATH
 PATH=$HOME/dev/tools/jruby/bin:$PATH
 PATH=$PATH:$HOME/dev/tools/grails/bin
@@ -32,6 +31,8 @@ export JBOSS_HOME=$HOME/dev/appservers/jboss-eap-5.1/jboss-as
 alias ll='ls -laG'
 alias ctail='grc tail'
 alias aq='aquamacs'
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
 
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
 
@@ -43,14 +44,8 @@ export GREP_OPTIONS='--color=auto'
 export USER=im
 export SB_ENABLED=true
 
-#export JAVA_HOME=/usr
-
-
 source $HOME/dev/tools/bin/git-completion.bash
 source /opt/boxen/env.sh
 
 #source $HOME/.grcat
 #source "`brew --prefix`/etc/grc.bashrc"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
