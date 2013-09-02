@@ -80,6 +80,10 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 set termencoding=utf-8
 set window=52
 set number
@@ -87,6 +91,7 @@ filetype on
 set nowrap
 
 set background=dark 
-colorscheme ir_black 
-"colorscheme xemacs
-syntax on
+"set background=light
+"colorscheme ir_black 
+colorscheme solarized
+
