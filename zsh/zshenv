@@ -85,3 +85,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
+source /opt/boxen/env.sh
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

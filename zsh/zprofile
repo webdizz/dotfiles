@@ -7,18 +7,10 @@
 
 alias ll='ls -laG'
 alias ctail='grc tail'
-alias aq='aquamacs'
+alias em='emacs'
+alias emd='emacs --daemon'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
 
-export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
 
-export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
-# Tell grep to highlight matches
-export GREP_OPTIONS='--color=auto'
-
-
-#source $HOME/dev/tools/bin/git-completion.bash
-source /opt/boxen/env.sh
 

@@ -33,8 +33,12 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
-  'git'
-  
+  'git' \
+  'osx' \
+  'syntax-highlighting' \
+  'ruby' \
+  'homebrew' \
+  'tmux'
 #
 # Editor
 #

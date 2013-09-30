@@ -11,4 +11,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+compctl -g '~/.teamocil/*(:t:r)' teamocil
 
+fpath=(/opt/boxen/homebrew/share/zsh-completions $fpath)
+
+fpath=(~/.zsh $fpath)
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
