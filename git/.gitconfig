@@ -6,6 +6,7 @@
 	autocrlf = false
 	excludesfile = /opt/boxen/config/git/gitignore
 	trustctime = false
+	editor = vim
 
 [merge]
 	tool = extMerge
