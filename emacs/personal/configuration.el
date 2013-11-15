@@ -36,6 +36,22 @@
 ;; cycle through buffers
 (global-set-key (kbd "<C-tab>") 'bury-buffer)
 
+;;tabs
+(setq tabbar-ruler-global-tabbar t) ; If you want tabbar
+(setq-default tab-width 2)
+(setq-default indent-tabs-mode nil)
+(require 'tabbar-ruler)
+(tabbar-ruler-group-by-projectile-project)
+(global-set-key (kbd "<s-left>") 'tabbar-backward-tab)
+(global-set-key (kbd "<s-right>") 'tabbar-forward-tab)
+
+;; key board / input method settings
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
 
 (provide 'configuration)
 ;;;
