@@ -138,5 +138,30 @@
 
 (require 'egg)
 
+(require 'helm-config)
+(require 'ac-helm)
+(global-set-key (kbd "C-c h") 'helm-mini)
+(define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
+; helm completion
+(helm-mode 1)
+
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(require 'auto-complete-config)
+(ac-config-default)
+(auto-complete-mode t)
+(setq
+ ac-delay 2
+ ac-auto-show-menu 0.4
+ ac-quick-help-delay 0.5)
+
+(setq
+ ac-auto-start 2
+ ac-override-local-map nil
+ ac-use-menu-map t
+ ac-set-trigger-key "TAB")
+
+(define-key ac-menu-map "C-n" 'ac-next)
+(define-key ac-menu-map "C-p" 'ac-previous)
+
 (provide 'configuration)
 ;;;
