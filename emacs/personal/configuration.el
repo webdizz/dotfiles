@@ -53,7 +53,7 @@
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 (require 'tabbar-ruler)
-(tabbar-ruler-group-by-projectile-project)
+;;(tabbar-ruler-group-by-projectile-project)
 (global-set-key (kbd "<s-left>") 'tabbar-backward-tab)
 (global-set-key (kbd "<s-right>") 'tabbar-forward-tab)
 
@@ -83,8 +83,8 @@
 (require 'dired-x)
 
 
-(require 'zlc)
-(zlc-mode t)
+;;(require 'zlc)
+;;(zlc-mode t)
 
 ;; Plantuml
 (autoload 'plantuml-mode "plantuml-mode" "Plantuml editing mode." t)
@@ -138,7 +138,7 @@
 
 (require 'egg)
 
-(require 'helm-config)
+(require  'helm-config)
 (require 'ac-helm)
 (global-set-key (kbd "C-c h") 'helm-mini)
 (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
@@ -148,11 +148,18 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (require 'auto-complete-config)
 (ac-config-default)
-(auto-complete-mode t)
 (setq
- ac-delay 2
+ auto-complete-mode t
+ global-auto-complete-mode t
+ ac-delay 5
  ac-auto-show-menu 0.4
  ac-quick-help-delay 0.5)
+
+(add-to-list 'ac-modes 'sql-mode)
+(add-to-list 'ac-modes 'puppet-mode)
+(add-to-list 'ac-modes 'erlang-mode)
+(add-to-list 'ac-modes 'yaml-mode)
+
 
 (setq
  ac-auto-start 2
@@ -162,6 +169,13 @@
 
 (define-key ac-menu-map "C-n" 'ac-next)
 (define-key ac-menu-map "C-p" 'ac-previous)
+
+
+(projectile-global-mode)
+(setq projectile-indexing-method 'native)
+(setq projectile-enable-caching t)
+(setq projectile-completion-system 'grizzl)
+
 
 (provide 'configuration)
 ;;;
