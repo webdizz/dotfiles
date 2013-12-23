@@ -28,7 +28,7 @@
 ;; save recent files
 (setq recentf-save-file (concat user-emacs-directory "recentf")
       recentf-max-saved-items 200
-      recentf-max-menu-items 15)
+      recentf-max-menu-items 200)
 (recentf-mode t)
 
 ;;; Mode line defaults
@@ -53,7 +53,7 @@
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 (require 'tabbar-ruler)
-;;(tabbar-ruler-group-by-projectile-project)
+(tabbar-ruler-group-by-projectile-project)
 (global-set-key (kbd "<s-left>") 'tabbar-backward-tab)
 (global-set-key (kbd "<s-right>") 'tabbar-forward-tab)
 
@@ -138,6 +138,10 @@
 
 (require 'egg)
 
+;; code templates
+; should be loaded before auto complete so that they can work together
+(require 'yasnippet-bundle)
+
 (require  'helm-config)
 (require 'ac-helm)
 (global-set-key (kbd "C-c h") 'helm-mini)
@@ -151,31 +155,37 @@
 (setq
  auto-complete-mode t
  global-auto-complete-mode t
- ac-delay 5
- ac-auto-show-menu 0.4
- ac-quick-help-delay 0.5)
+ ac-delay 0.5
+ ;ac-auto-show-menu 0.1
+ ac-quick-help-delay 0.5
+ ac-auto-start 3
+ ac-override-local-map nil
+ ac-use-menu-map t
+ ac-set-trigger-key "TAB"
+ ac-ignore-case t
+ ac-ignore-case 'smart
+ ac-ignore-case nil
+ ac-source-words-in-all-buffer t
+)
 
 (add-to-list 'ac-modes 'sql-mode)
 (add-to-list 'ac-modes 'puppet-mode)
 (add-to-list 'ac-modes 'erlang-mode)
 (add-to-list 'ac-modes 'yaml-mode)
+(add-to-list 'ac-modes 'groovy-mode)
 
-
-(setq
- ac-auto-start 2
- ac-override-local-map nil
- ac-use-menu-map t
- ac-set-trigger-key "TAB")
-
+(define-key ac-completing-map "\ESC/" 'ac-stop)
 (define-key ac-menu-map "C-n" 'ac-next)
 (define-key ac-menu-map "C-p" 'ac-previous)
 
-
+;; Projectile
 (projectile-global-mode)
 (setq projectile-indexing-method 'native)
 (setq projectile-enable-caching t)
 (setq projectile-completion-system 'grizzl)
 
+;; aka vi(m) dot mode
+(require 'dot-mode)
+(add-hook 'find-file-hooks 'dot-mode-on)
 
 (provide 'configuration)
-;;;

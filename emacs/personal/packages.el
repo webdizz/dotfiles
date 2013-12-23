@@ -1,6 +1,7 @@
 ;;; Code:
 (prelude-require-packages '(groovy-mode
-                            yaml-mode
+
+              yaml-mode
                             json
                             bash-completion
                             color-theme-solarized
@@ -32,6 +33,9 @@
                             cider
                             plantuml-mode
                             egg
+                            dot-mode
+
+                            yasnippet-bundle
                             ))
 
 (provide 'packages)
