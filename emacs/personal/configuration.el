@@ -186,6 +186,6 @@
 
 ;; aka vi(m) dot mode
 (require 'dot-mode)
-(add-hook 'find-file-hooks 'dot-mode-on)
+;(add-hook 'find-file-hooks 'dot-mode-on)
 
 (provide 'configuration)

@@ -46,6 +46,7 @@ export SB_ENABLED=true
 
 source $HOME/dev/tools/bin/git-completion.bash
 source /opt/boxen/env.sh
+export DOCKER_HOST=tcp://localhost:4243
 
 #source $HOME/.grcat
 #source "`brew --prefix`/etc/grc.bashrc"

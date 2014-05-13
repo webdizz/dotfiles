@@ -108,16 +108,18 @@
 
   # pull
   pl = pull                         # pull
-	plo = pull origin
-	plom = pull origin master
-	pb = pull --rebase
-	pbo = pull --rebase origin
-	pbom = pull --rebase origin master
+  plo = pull origin
+  plom = pull origin master
+  pb = pull --rebase
+  pbo = pull --rebase origin
+  pbom = pull --rebase origin master
+  pbod = pull --rebase origin develop
 
   # push
   ps = push                         # push
-	pso = push origin
-	psom = push origin master
+  pso = push origin
+  psom = push origin master
+  psod = push origin develop
 
   # rebase
   rc = rebase --continue            # continue rebase
