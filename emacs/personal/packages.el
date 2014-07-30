@@ -1,7 +1,9 @@
 ;;; Code:
-(prelude-require-packages '(groovy-mode
 
-              yaml-mode
+(prelude-require-package 'egg)
+
+(prelude-require-packages '(groovy-mode
+                            yaml-mode
                             json
                             bash-completion
                             color-theme-solarized
@@ -34,7 +36,6 @@
                             plantuml-mode
                             egg
                             dot-mode
-
                             yasnippet-bundle
                             ))
 

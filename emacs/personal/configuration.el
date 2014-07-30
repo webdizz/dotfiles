@@ -18,6 +18,8 @@
 (add-to-list 'auto-mode-alist '("Vagrantfile" . ruby-mode))
 (add-to-list 'interpreter-mode-alist '("Vagrantfile" . ruby-mode))
 
+(require 'helm-config)
+(helm-mode)
 
 ;; saveplace remembers your location in a file when saving files
 (setq save-place-file (concat user-emacs-directory "saveplace"))
