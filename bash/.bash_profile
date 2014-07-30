@@ -41,7 +41,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
-export USER=im
+export USER=webdizz
 export SB_ENABLED=true
 
 source $HOME/dev/tools/bin/git-completion.bash
@@ -50,3 +50,6 @@ export DOCKER_HOST=tcp://localhost:4243
 
 #source $HOME/.grcat
 #source "`brew --prefix`/etc/grc.bashrc"
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/webdizz/.gvm/bin/gvm-init.sh" ]] && source "/Users/webdizz/.gvm/bin/gvm-init.sh"
