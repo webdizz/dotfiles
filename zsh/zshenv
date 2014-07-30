@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='vim'
 export PAGER='less'
 
 #
@@ -79,13 +79,13 @@ fi
 # Customizations
 #
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
+source /opt/boxen/env.sh
+source /Users/webdizz/dev/pdotfiles/env.sh
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
-
-source /opt/boxen/env.sh
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"

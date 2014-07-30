@@ -38,6 +38,10 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'ruby' \
   'homebrew' \
+  'emacs' \
+  'ssh' \
+  'history' \
+  'command-not-found' \
   'tmux'
 #
 # Editor
