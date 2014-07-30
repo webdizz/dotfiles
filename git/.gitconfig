@@ -45,28 +45,28 @@
   frag = magenta bold
   old = red bold
   new = green bold
-	whitespace = red reverse
+  whitespace = red reverse
 
 [color "status"]
-	added = yellow
+  added = yellow
   changed = green
   untracked = cyan reverse
   branch = magenta
 
 [github]
-	user = webdizz
+  user = webdizz
 
 [alias]
   # add
   a = add                           # add
   chunkyadd = add --patch           # stage commits chunk by chunk
-	ai = add -i
+  ai = add -i
 
   # branch
   b = branch -v                     # branch (verbose)
-	ba = branch -a
-	bd = branch -d
-	br = branch -r
+  ba = branch -a
+  bd = branch -d
+  br = branch -r
 
   # commit
   c = commit -m                     # commit with message
@@ -74,14 +74,14 @@
   ci = commit                       # commit
   amend = commit --amend            # ammend your last commit
   ammend = commit --amend           # ammend your last commit
-	cd = commit --amend
+  cd = commit --amend
 
-	# fetch
-	f = fetch
-	fo = fetch origin	
+  # fetch
+  f = fetch
+  fo = fetch origin	
 
-	# patch
-	fp = format-patch
+  # patch
+  fp = format-patch
 
   # checkout
   co = checkout                     # checkout
@@ -94,13 +94,14 @@
   d = diff                          # diff unstaged changes
   dc = diff --cached                # diff staged changes
   last = diff HEAD^                 # diff last committed change
-	dk = diff --check
-	dp = diff --patience
-	dck = diff --cached --check
+  dk = diff --check
+  dp = diff --patience
+  dck = diff --cached --check
 
   # log
   l = log --graph --date=short
-	lg = log --oneline --graph --decorate	
+  lst = log --graph --date=short --stat
+  lg = log --oneline --graph --decorate	
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   changelog = log --pretty=format:\" * %s\"
@@ -118,32 +119,33 @@
   # push
   ps = push                         # push
   pso = push origin
+  psot = push origin --tags
   psom = push origin master
   psod = push origin develop
 
   # rebase
   rc = rebase --continue            # continue rebase
   rs = rebase --skip                # skip rebase
-	ra = rebase --abort
-	ri = rebase --interactive
+  ra = rebase --abort
+  ri = rebase --interactive
 
   # remote
   r = remote -v                     # show remotes (verbose)
-	rr = remote rm
-	rv = remote -v
-	rp = remote prune
-	rs = remote show
-	rao = remote add origin
-	rso = remote show origin
-	rpo = remote prune origin
+  rr = remote rm
+  rv = remote -v
+  rp = remote prune
+  rs = remote show
+  rao = remote add origin
+  rso = remote show origin
+  rpo = remote prune origin
 	
-	# merge	
-	m = merge
-	ma = merge --abort
-	mc = merge --continue
-	ms = merge --skip
+  # merge	
+  m = merge
+  ma = merge --abort
+  mc = merge --continue
+  ms = merge --skip
 
-	fk = fsck
+  fk = fsck
   # reset
   unstage = reset HEAD              # remove files from index (tracking)
   uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
@@ -175,7 +177,9 @@
 	sb = status -s -b
 
   # tag
-  t = tag -n                        # show tags with <n> lines of each tag message
+  t = tag 
+  tn = tag -n                        # show tags with <n> lines of each tag message
+  tl = tag -l
 
   # svn helpers
   svnr = svn rebase
