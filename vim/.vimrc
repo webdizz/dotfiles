@@ -1,3 +1,61 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-pathogen'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'sjl/gundo.vim'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-tbone'
+Plugin 'tpope/vim-obsession'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'promisedlandt/vim-colors-ir_black'
+Plugin 'guns/vim-clojure-static'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'honza/dockerfile.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'heartsentwined/vim-ember-script'
+Plugin 'oscarh/vimerl'
+Plugin 'tpope/vim-git'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'travitch/hasksyn'
+Plugin 'othree/html5.vim'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'pangloss/vim-javascript'
+Plugin 'glanotte/vim-jasmine'
+Plugin 'leshill/vim-json'
+Plugin 'groenewege/vim-less'
+Plugin 'mutewinter/nginx.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'uarun/vim-protobuf'
+Plugin 'mitsuhiko/vim-python-combined'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'wting/rust.vim'
+Plugin 'derekwyatt/vim-sbt'
+Plugin 'vim-scripts/R.vim'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'slim-template/vim-slim'
+Plugin 'wavded/vim-stylus'
+Plugin 'andersoncustodio/vim-tmux'
+Plugin 'ap/vim-css-color'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
