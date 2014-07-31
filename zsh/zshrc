@@ -23,3 +23,6 @@ compinit
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/webdizz/.gvm/bin/gvm-init.sh" ]] && source "/Users/webdizz/.gvm/bin/gvm-init.sh"
+
+# added by travis gem
+[ -f /Users/webdizz/.travis/travis.sh ] && source /Users/webdizz/.travis/travis.sh
