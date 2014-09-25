@@ -1,0 +1,57 @@
+# Configuration is split into the following directives:
+ 
+# config (for global configurations)
+ 
+config defaultToCurrentScreen true
+config resizePercentOf screenSize
+ 
+# alias (to create alias variables)
+ 
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+ 
+alias hyper ctrl;shift;alt;cmd
+
+# Miscellaneous
+alias leader esc;cmd
+alias showHint hint AOEUIDHTNSYXFBPKGMCW
+ 
+# key bindings
+ 
+bind l:${hyper}    focus right
+bind h:${hyper}    focus left
+bind k:${hyper}    focus up
+bind j:${hyper}    focus down
+ 
+bind r:${hyper} ${topleft}
+bind t:${hyper} ${topright}
+bind d:${hyper} ${lefthalf}
+bind g:${hyper} ${righthalf}
+bind f:${hyper} ${full}
+bind c:${hyper} ${bottomleft}
+bind v:${hyper} ${bottomright}
+
+# Window Hints
+bind esc:cmd hint
+
+# Nudge Bindings
+bind right:${hyper} nudge +10% +0
+bind left:${hyper}  nudge -10% +0
+bind up:${hyper}    nudge +0   -10%
+bind down:${hyper}  nudge +0   +10%
+
+# Resize Bindings
+# KG: These first two conflict with Mac OS shortcuts
+bind d:${hyper}       resize +10% +0
+bind s:${hyper}       resize -10% +0
+bind e:${hyper}       resize +0   -10%
+bind x:${hyper}       resize +0   +10%
+bind ]:${hyper}       resize -10% +0 bottom-right
+bind [:${hyper}       resize +10% +0 bottom-right
+bind p:${hyper}       resize +0   +10% bottom-right
+bind o:${hyper}       resize +0   -10% bottom-right
