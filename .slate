@@ -30,7 +30,7 @@ bind j:${hyper}    focus down
  
 bind r:${hyper} ${topleft}
 bind t:${hyper} ${topright}
-bind d:${hyper} ${lefthalf}
+bind a:${hyper} ${lefthalf}
 bind g:${hyper} ${righthalf}
 bind f:${hyper} ${full}
 bind c:${hyper} ${bottomleft}
