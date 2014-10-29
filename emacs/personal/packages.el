@@ -1,7 +1,5 @@
 ;;; Code:
 
-(prelude-require-package 'egg)
-
 (prelude-require-packages '(groovy-mode
                             yaml-mode
                             json
@@ -38,6 +36,7 @@
                             dot-mode
                             yasnippet-bundle
                             tabbar-ruler
+			    egg
                             ))
 
 (provide 'packages)
