@@ -11,7 +11,6 @@
                             elixir-mode
                             puppet-mode
                             smooth-scroll
-                            tabbar-ruler
                             restclient
                             web-beautify
                             flymake-yaml
@@ -26,17 +25,19 @@
                             flymake-shell
                             fic-mode
                             fullscreen-mode
-                            nodejs-repl
+                            nodejs-repl
                             flyspell-lazy
                             zlc
                             window-numbering
                             markdown-mode+
+			    helm
                             ac-helm
                             cider
                             plantuml-mode
                             egg
                             dot-mode
                             yasnippet-bundle
+                            tabbar-ruler
                             ))
 
 (provide 'packages)
