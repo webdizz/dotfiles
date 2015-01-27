@@ -1,3 +1,7 @@
+;;; package --- Summary
+
+;;; Commentary:
+
 ;;; Code:
 
 (prelude-require-packages '(groovy-mode
@@ -28,15 +32,30 @@
                             zlc
                             window-numbering
                             markdown-mode+
-			    helm
+                            helm
                             ac-helm
                             cider
                             plantuml-mode
-                            egg
                             dot-mode
                             yasnippet-bundle
                             tabbar-ruler
-			    egg
+                            egg
+                            rust-mode
+                            flycheck
+                            flycheck-rust
+                            flycheck-clojure
+                            flymake-rust
+                            flymake-go
+                            cider
+                            ac-cider
+                            go-autocomplete
+                            go-mode
+                            go-projectile
+                            golint
+                            gotest
+                            helm-go-package
                             ))
 
 (provide 'packages)
+
+;;; packages.el ends here

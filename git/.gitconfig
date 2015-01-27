@@ -79,12 +79,15 @@
   # fetch
   f = fetch
   fo = fetch origin	
+  fb = fetch build
 
   # patch
   fp = format-patch
 
   # checkout
   co = checkout                     # checkout
+  com = checkout master 	    # checkout master
+  cod = checkout develop            # checkout develop
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
 
   # cherry-pick
@@ -111,6 +114,7 @@
   pl = pull                         # pull
   plo = pull origin
   plom = pull origin master
+  plod = pull origin develop
   pb = pull --rebase
   pbo = pull --rebase origin
   pbom = pull --rebase origin master
@@ -144,6 +148,8 @@
   ma = merge --abort
   mc = merge --continue
   ms = merge --skip
+  mm = merge master
+  md = merge develop
 
   fk = fsck
   # reset
