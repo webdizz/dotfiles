@@ -18,8 +18,9 @@
 (add-to-list 'auto-mode-alist '("Vagrantfile" . ruby-mode))
 (add-to-list 'interpreter-mode-alist '("Vagrantfile" . ruby-mode))
 
+(require 'helm)
 (require 'helm-config)
-(helm-mode)
+(helm-mode 1)
 
 ;; saveplace remembers your location in a file when saving files
 (setq save-place-file (concat user-emacs-directory "saveplace"))
@@ -142,7 +143,7 @@
 
 ;; code templates
 ; should be loaded before auto complete so that they can work together
-(require 'yasnippet-bundle)
+;;(require 'yasnippet-bundle)
 
 (require  'helm-config)
 (require 'ac-helm)

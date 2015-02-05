@@ -5,6 +5,8 @@
 ;;; Code:
 
 (prelude-require-packages '(groovy-mode
+                            helm
+                            ;;evil-visualstar
                             yaml-mode
                             json
                             bash-completion
@@ -32,12 +34,20 @@
                             zlc
                             window-numbering
                             markdown-mode+
-                            helm
+                            helm-dirset
+                            helm-dired-recent
+                            helm-filesets
+                            helm-flycheck
+                            helm-flymake
+                            helm-flyspell
+                            helm-commands
+                            helm-projectile
                             ac-helm
                             cider
                             plantuml-mode
                             dot-mode
-                            yasnippet-bundle
+                            ;;yasnippet
+                            ;;yasnippet-bundle
                             tabbar-ruler
                             egg
                             rust-mode
@@ -54,6 +64,8 @@
                             golint
                             gotest
                             helm-go-package
+                            ansible
+                            ansible-doc
                             ))
 
 (provide 'packages)
