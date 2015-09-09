@@ -1,25 +1,25 @@
 
 [user]
-	name = Izzet Mustsfaiev
-	email = webdizz@gmail.com
+  name = Izzet Mustsfaiev
+  email = webdizz@gmail.com
 [core]
-	autocrlf = false
-	excludesfile = /opt/boxen/config/git/gitignore
-	trustctime = false
-	editor = vim
-	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  autocrlf = false
+  excludesfile = /opt/boxen/config/git/gitignore
+  trustctime = false
+  editor = vim
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [push]
-	default = matching
+  default = matching
 [merge]
-	tool = extMerge
+  tool = extMerge
 [mergetool "extMerge"]
-	cmd = ~/dev/tools/bin/extMerge.sh \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+  cmd = ~/dev/tools/bin/extMerge.sh \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/Utils/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/Utils/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 
 [credential]
   helper = /opt/boxen/bin/boxen-git-credential
@@ -78,7 +78,7 @@
 
   # fetch
   f = fetch
-  fo = fetch origin	
+  fo = fetch origin
   fb = fetch build
 
   # patch
@@ -86,7 +86,7 @@
 
   # checkout
   co = checkout                     # checkout
-  com = checkout master 	    # checkout master
+  com = checkout master       # checkout master
   cod = checkout develop            # checkout develop
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
 
@@ -104,7 +104,7 @@
   # log
   l = log --graph --date=short
   lst = log --graph --date=short --stat
-  lg = log --oneline --graph --decorate	
+  lg = log --oneline --graph --decorate
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   changelog = log --pretty=format:\" * %s\"
@@ -114,11 +114,12 @@
   pl = pull                         # pull
   plo = pull origin
   plom = pull origin master
+  plum = pull upstream master
   plod = pull origin develop
-  pb = pull --rebase
-  pbo = pull --rebase origin
-  pbom = pull --rebase origin master
-  pbod = pull --rebase origin develop
+  pr = pull --rebase
+  pro = pull --rebase origin
+  prom = pull --rebase origin master
+  prod = pull --rebase origin develop
 
   # push
   ps = push                         # push
@@ -142,8 +143,8 @@
   rao = remote add origin
   rso = remote show origin
   rpo = remote prune origin
-	
-  # merge	
+
+  # merge
   m = merge
   ma = merge --abort
   mc = merge --continue
@@ -155,14 +156,14 @@
   # reset
   unstage = reset HEAD              # remove files from index (tracking)
   uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
-	re = reset
-	rh = reset HEAD
-	reh = reset --hard
-	rem = reset --mixed
-	res = reset --soft
-	rehh = reset --hard HEAD
-	remh = reset --mixed HEAD
-	resh = reset --soft HEAD
+  re = reset
+  rh = reset HEAD
+  reh = reset --hard
+  rem = reset --mixed
+  res = reset --soft
+  rehh = reset --hard HEAD
+  remh = reset --mixed HEAD
+  resh = reset --soft HEAD
   filelog = log -u                  # show changes to a file
   mt = mergetool                    # fire up the merge tool
 
@@ -171,32 +172,32 @@
   sl = stash list                   # list stashes
   sa = stash apply                  # apply stash (restore changes)
   sd = stash drop                   # drop stashes (destory changes)
-	sc = stash clear
-	sp = stash pop
-	ss = stash save
-	sw = stash show
+  sc = stash clear
+  sp = stash pop
+  ss = stash save
+  sw = stash show
 
   # status
   s = status                        # status
   st = status                       # status
   stat = status                     # status
-	sb = status -s -b
+  sb = status -s -b
 
   # tag
-  t = tag 
+  t = tag
   tn = tag -n                        # show tags with <n> lines of each tag message
   tl = tag -l
+  td = tag -d      # remove tag
 
   # svn helpers
   svnr = svn rebase
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
 
-	ls = ls-files
+  ls = ls-files
 
-	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
-	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+  whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+  whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
 
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-
