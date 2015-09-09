@@ -78,6 +78,7 @@ fi
 #
 # Customizations
 #
+export CHGO_ROOT=/opt/boxen/chgo
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
 source /opt/boxen/env.sh
 source /Users/webdizz/dev/pdotfiles/env.sh

@@ -26,3 +26,6 @@ compinit
 
 # added by travis gem
 [ -f /Users/webdizz/.travis/travis.sh ] && source /Users/webdizz/.travis/travis.sh
+
+PERL_MB_OPT="--install_base \"/Users/webdizz/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/webdizz/perl5"; export PERL_MM_OPT;
