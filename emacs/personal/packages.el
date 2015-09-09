@@ -35,12 +35,12 @@
                             window-numbering
                             markdown-mode+
                             helm-dirset
-                            helm-dired-recent
+                            ;helm-dired-recent
                             helm-filesets
                             helm-flycheck
                             helm-flymake
                             helm-flyspell
-                            helm-commands
+                            helm-helm-commands
                             helm-projectile
                             ac-helm
                             cider
