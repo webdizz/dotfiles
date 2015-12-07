@@ -1,8 +1,4 @@
 PATH=$HOME/dev/tools/mvn/bin:$PATH
-PATH=$HOME/dev/tools/jruby/bin:$PATH
-PATH=$PATH:$HOME/dev/tools/grails/bin
-PATH=$PATH:$HOME/dev/tools/groovy/bin
-PATH=$PATH:$HOME/dev/tools/play
 PATH=$PATH:$HOME/dev/tools/oracle/client
 PATH=$PATH:$HOME/dev/tools/bin
 PATH=$PATH:$HOME/dev/tools/sbt/bin
@@ -44,12 +40,13 @@ export GREP_OPTIONS='--color=auto'
 export USER=webdizz
 export SB_ENABLED=true
 
-source $HOME/dev/tools/bin/git-completion.bash
+#source $HOME/dev/tools/bin/git-completion.bash
 source /opt/boxen/env.sh
-export DOCKER_HOST=tcp://localhost:4243
 
 #source $HOME/.grcat
 #source "`brew --prefix`/etc/grc.bashrc"
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/webdizz/.gvm/bin/gvm-init.sh" ]] && source "/Users/webdizz/.gvm/bin/gvm-init.sh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/webdizz/.sdkman"
+[[ -s "/Users/webdizz/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/webdizz/.sdkman/bin/sdkman-init.sh"

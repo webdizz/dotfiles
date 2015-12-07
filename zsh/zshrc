@@ -29,3 +29,7 @@ compinit
 
 PERL_MB_OPT="--install_base \"/Users/webdizz/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/webdizz/perl5"; export PERL_MM_OPT;
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/webdizz/.sdkman"
+[[ -s "/Users/webdizz/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/webdizz/.sdkman/bin/sdkman-init.sh"
