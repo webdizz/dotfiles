@@ -1,6 +1,6 @@
 
 [user]
-  name = Izzet Mustsfaiev
+  name = Izzet Mustafaiev
   email = webdizz@gmail.com
 [core]
   autocrlf = false
@@ -120,6 +120,7 @@
   pro = pull --rebase origin
   prom = pull --rebase origin master
   prod = pull --rebase origin develop
+  prov = pull --rebase origin vm
 
   # push
   ps = push                         # push
@@ -127,6 +128,7 @@
   psot = push origin --tags
   psom = push origin master
   psod = push origin develop
+  psov = push origin vm
 
   # rebase
   rc = rebase --continue            # continue rebase
@@ -195,6 +197,11 @@
   svnl = svn log --oneline --show-commit
 
   ls = ls-files
+
+  # Gerrit
+  pgod = push origin HEAD:refs/for/develop
+  pggd = push gerrit HEAD:refs/for/develop
+  pg   = push gerrit
 
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
   whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
