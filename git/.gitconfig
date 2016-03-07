@@ -200,7 +200,7 @@
 
   # Gerrit
   pgod = push origin HEAD:refs/for/develop
-  pggd = push gerrit HEAD:refs/for/develop
+  pgod1 = push gerrit HEAD:refs/for/pos1/develop
   pg   = push gerrit
 
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
