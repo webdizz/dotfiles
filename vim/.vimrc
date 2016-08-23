@@ -148,8 +148,7 @@ set number
 filetype on
 set nowrap
 
-"set background=dark 
+"set background=dark
 set background=light
-"colorscheme ir_black 
+"colorscheme ir_black
 colorscheme solarized
-
