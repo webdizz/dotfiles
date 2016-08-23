@@ -1,7 +1,7 @@
 
 [user]
-  name = Izzet Mustafaiev
-  email = webdizz@gmail.com
+	name = Izzet Mustafayev
+	email = izzet_mustafayev@epam.com
 [core]
   autocrlf = false
   excludesfile = /opt/boxen/config/git/gitignore
@@ -121,6 +121,7 @@
   prom = pull --rebase origin master
   prod = pull --rebase origin develop
   prov = pull --rebase origin vm
+  prgd = pull --rebase gerrit develop
 
   # push
   ps = push                         # push
