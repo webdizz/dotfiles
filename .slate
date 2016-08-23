@@ -1,12 +1,12 @@
 # Configuration is split into the following directives:
- 
+
 # config (for global configurations)
- 
+
 config defaultToCurrentScreen true
 config resizePercentOf screenSize
- 
+
 # alias (to create alias variables)
- 
+
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
 alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
@@ -14,20 +14,20 @@ alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
 alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
 alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
- 
+
 alias hyper ctrl;shift;alt;cmd
 
 # Miscellaneous
 alias leader esc;cmd
 alias showHint hint AOEUIDHTNSYXFBPKGMCW
- 
+
 # key bindings
- 
+
 bind l:${hyper}    focus right
 bind h:${hyper}    focus left
 bind k:${hyper}    focus up
 bind j:${hyper}    focus down
- 
+
 bind r:${hyper} ${topleft}
 bind t:${hyper} ${topright}
 bind a:${hyper} ${lefthalf}
@@ -55,3 +55,10 @@ bind ]:${hyper}       resize -10% +0 bottom-right
 bind [:${hyper}       resize +10% +0 bottom-right
 bind p:${hyper}       resize +0   +10% bottom-right
 bind o:${hyper}       resize +0   -10% bottom-right
+
+# Window movement
+bind 1:${hyper} chain throw 1 resize:screenSizeX/2;screenSizeY | ${righthalf}
+bind 2:${hyper} chain throw 2 resize:screenSizeX/2;screenSizeY | ${righthalf}
+bind 3:${hyper} chain throw 3 resize:screenSizeX/2;screenSizeY | ${righthalf}
+bind 4:${hyper} chain throw 4 resize:screenSizeX/2;screenSizeY | ${righthalf}
+bind 5:${hyper} chain throw 0 resize:screenSizeX/2;screenSizeY | ${righthalf}
