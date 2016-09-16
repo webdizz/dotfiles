@@ -58,7 +58,9 @@ bind o:${hyper}       resize +0   -10% bottom-right
 
 # Window movement
 bind 1:${hyper} chain throw 1 resize:screenSizeX/2;screenSizeY | ${righthalf}
-bind 2:${hyper} chain throw 2 resize:screenSizeX/2;screenSizeY | ${righthalf}
-bind 3:${hyper} chain throw 3 resize:screenSizeX/2;screenSizeY | ${righthalf}
-bind 4:${hyper} chain throw 4 resize:screenSizeX/2;screenSizeY | ${righthalf}
-bind 5:${hyper} chain throw 0 resize:screenSizeX/2;screenSizeY | ${righthalf}
+bind 2:${hyper} chain throw 0 resize:screenSizeX/2;screenSizeY | ${righthalf}
+bind 3:${hyper} chain throw 2 resize:screenSizeX/2;screenSizeY | ${righthalf}
+
+
+# Show a positioning grid for each monitor
+bind g:cmd grid padding:5 0:6,2 1:8,3
