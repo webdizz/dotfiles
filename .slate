@@ -15,7 +15,8 @@ alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
 alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
 
-alias hyper ctrl;shift;alt;cmd
+#alias hyper ctrl;shift;alt;cmd
+alias hyper f19
 
 # Miscellaneous
 alias leader esc;cmd
@@ -63,4 +64,4 @@ bind 3:${hyper} chain throw 2 resize:screenSizeX/2;screenSizeY | ${righthalf}
 
 
 # Show a positioning grid for each monitor
-bind g:cmd grid padding:5 0:6,2 1:8,3
+bind g:cmd;shift grid padding:5 0:6,2 1:8,3
