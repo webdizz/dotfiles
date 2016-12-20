@@ -81,8 +81,8 @@ fi
 export CHGO_ROOT=/opt/boxen/chgo
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
 source /opt/boxen/env.sh
-source /Users/webdizz/dev/pdotfiles/env.sh
-source /Users/webdizz/.sdkman/bin/sdkman-init.sh
+source "/Users/${USER}/dev/pdotfiles/env.sh"
+source "/Users/${USER}/.sdkman/bin/sdkman-init.sh"
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
