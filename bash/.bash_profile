@@ -37,7 +37,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
-export USER=webdizz
 export SB_ENABLED=true
 
 #source $HOME/dev/tools/bin/git-completion.bash
@@ -46,7 +45,3 @@ source /opt/boxen/env.sh
 #source $HOME/.grcat
 #source "`brew --prefix`/etc/grc.bashrc"
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/webdizz/.sdkman"
-[[ -s "/Users/webdizz/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/webdizz/.sdkman/bin/sdkman-init.sh"
