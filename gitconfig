@@ -1,5 +1,14 @@
-[include]
-	path = ~/.gitconfig-user
+[user]
+	name = Izzet Mustafaiev
+	email = izzet@mustafaiev.com
+
+[shell]
+	# Default SSH username.
+	username = webdizz
+
+[github]
+	# GitHub username for command-line tools.
+	user = webdizz
 
 [core]
   autocrlf = false
