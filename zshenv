@@ -44,7 +44,6 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   $path
-  $HOME/dev/tools/*/bin
 )
 
 #
@@ -78,17 +77,11 @@ fi
 #
 # Customizations
 #
-export CHGO_ROOT=/opt/boxen/chgo
-export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
-source /opt/boxen/env.sh
-source "/Users/${USER}/dev/pdotfiles/env.sh"
+#export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
+#source "/Users/${USER}/dev/pdotfiles/env.sh"
 source "/Users/${USER}/.sdkman/bin/sdkman-init.sh"
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
-
-PATH="$HOME/dev/tools/activator/:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
