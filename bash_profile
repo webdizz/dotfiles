@@ -40,7 +40,7 @@ export GREP_OPTIONS='--color=auto'
 export SB_ENABLED=true
 
 #source $HOME/dev/tools/bin/git-completion.bash
-source /opt/boxen/env.sh
+#source /opt/boxen/env.sh
 
 #source $HOME/.grcat
 #source "`brew --prefix`/etc/grc.bashrc"
