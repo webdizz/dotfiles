@@ -14,7 +14,7 @@ for DOTFILE in *; do
   [ -d $DOTFILE ] && DOTFILE="$DOTFILE/"
   DIRFILE="$DOTFILESDIR/$DOTFILE"
 
-  echo $DOTFILE | egrep -q '(^script/$|\.txt$|\.md$)' && continue
+  echo $DOTFILE | egrep -q '(^script/$|\.txt$|\.md$|^\.git$|^\.gitmodules$)' && continue
 
   # Don't install some files unless you're also called Mike.
   if echo $USER | grep -vq 'mike'
@@ -39,3 +39,8 @@ for DOTFILE in *; do
     cp -rv "$DIRFILE" "$HOMEFILE"
   fi
 done
+
+if ! [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]
+    then
+      curl -s "https://get.sdkman.io" | bash
+fi
