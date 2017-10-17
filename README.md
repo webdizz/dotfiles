@@ -6,3 +6,4 @@ dotfiles
 .files used by myself
 
 
+Consider http://www.hammerspoon.org/go/ as depicted http://brettterpstra.com/2016/09/29/a-better-hyper-key-hack-for-sierra/ instead of outdated mattr-slate.
