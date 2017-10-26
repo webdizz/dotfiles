@@ -14,3 +14,5 @@ alias ec='emacsclient -c'
 
 alias j8='export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"; export PATH="${JAVA_HOME}/bin:$PATH"'
 alias j9='export JAVA_HOME="`/usr/libexec/java_home -v 9`"; export PATH="${JAVA_HOME}/bin:$PATH"'
+
+export PATH=/usr/local/anaconda3/bin:"$PATH"
