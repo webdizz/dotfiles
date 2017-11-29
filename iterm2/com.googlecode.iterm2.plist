@@ -546,8 +546,10 @@
 	<true/>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 608 620 392 0 0 1920 1177 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>305 434 1018 447 0 0 1920 1177 </string>
+	<string>305 434 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>960 80 958 1097 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
@@ -2058,12 +2060,22 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>CFFCAC38-1730-44FE-B82B-796FA5903EAA</string>
+	<key>NoSyncLastTipTime</key>
+	<real>531074017.27180803</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>529927803.061822</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+	</array>
+	<key>NumberOfLinesForAccessibility</key>
+	<integer>100000</integer>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2076,6 +2088,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteHistoryMaxOptions</key>
+	<integer>200</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2130,7 +2144,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-17T10:12:30Z</date>
+	<date>2017-10-30T16:33:36Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
