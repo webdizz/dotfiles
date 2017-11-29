@@ -17,6 +17,10 @@ for ext in 'christian-kohler.path-intellisense' \
             'k--kato.intellij-idea-keybindings' \
             'gerane.theme-solarized-light' \
             'gerane.theme-solarized-dark' \
-            'formulahendry.terminal'; do
+            'vscjava.vscode-java-pack' \
+            'sensourceinc.vscode-sql-beautify' \
+            'xyz.plsql-language' \
+            'donjayamanne.jupyter' \
+            'formulahendry.terminal' \; do
     code  --install-extension "$ext"
 done
