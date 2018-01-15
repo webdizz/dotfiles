@@ -21,6 +21,7 @@ for ext in 'christian-kohler.path-intellisense' \
             'sensourceinc.vscode-sql-beautify' \
             'xyz.plsql-language' \
             'donjayamanne.jupyter' \
+            'mathiasfrohlich.kotlin' \
             'formulahendry.terminal' \; do
     code  --install-extension "$ext"
 done
