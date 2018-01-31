@@ -21,4 +21,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
- source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export PATH=/home/webdizz/anaconda3/bin:$PATH
