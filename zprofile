@@ -12,7 +12,11 @@ alias emd='emacs --daemon'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
 
-alias j8='export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"; export PATH="${JAVA_HOME}/bin:$PATH"'
-alias j9='export JAVA_HOME="`/usr/libexec/java_home -v 9`"; export PATH="${JAVA_HOME}/bin:$PATH"'
+if [ "$(uname 2> /dev/null)" != "Linux" ]; then
+	alias j8='export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"; export PATH="${JAVA_HOME}/bin:$PATH"'
+	alias j9='export JAVA_HOME="`/usr/libexec/java_home -v 9`"; export PATH="${JAVA_HOME}/bin:$PATH"'
 
-export PATH=/usr/local/anaconda3/bin:"$PATH"
+	export PATH=/usr/local/anaconda3/bin:"$PATH"
+else
+	export PATH=/home/webdizz/anaconda3/bin:"$PATH"
+fi
