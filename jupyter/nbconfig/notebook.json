@@ -1,0 +1,15 @@
+{
+  "load_extensions": {
+    "spellchecker/main": true,
+    "code_prettify/autopep8": true,
+    "autosavetime/main": true,
+    "highlight_selected_word/main": true,
+    "toc2/main": true,
+    "collapsible_headings/main": true
+  },
+  "autopep8": {
+    "hotkeys": {
+      "process_selected": "alt-ctrl-l"
+    }
+  }
+}
