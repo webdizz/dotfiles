@@ -79,7 +79,7 @@ fi
 #
 #export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
 #source "/Users/${USER}/dev/pdotfiles/env.sh"
-source "/Users/${USER}/.sdkman/bin/sdkman-init.sh"
+source ~/.sdkman/bin/sdkman-init.sh
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
