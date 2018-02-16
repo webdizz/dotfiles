@@ -5,11 +5,16 @@
     "autosavetime/main": true,
     "highlight_selected_word/main": true,
     "toc2/main": true,
-    "collapsible_headings/main": true
+    "collapsible_headings/main": true,
+    "limit_output/main": true,
+    "codefolding/main": true
   },
   "autopep8": {
     "hotkeys": {
       "process_selected": "alt-ctrl-l"
     }
-  }
+  },
+  "limit_output": "1000",
+  "autosavetime_set_starting_interval": true,
+  "autosavetime_starting_interval": "1"
 }
