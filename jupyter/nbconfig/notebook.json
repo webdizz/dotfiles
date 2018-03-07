@@ -6,7 +6,7 @@
     "highlight_selected_word/main": true,
     "toc2/main": true,
     "collapsible_headings/main": true,
-    "limit_output/main": true,
+    "limit_output/main": false,
     "codefolding/main": true
   },
   "autopep8": {
@@ -14,7 +14,7 @@
       "process_selected": "alt-ctrl-l"
     }
   },
-  "limit_output": "1000",
+  "limit_output": "10000",
   "autosavetime_set_starting_interval": true,
   "autosavetime_starting_interval": "1"
 }
