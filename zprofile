@@ -19,4 +19,8 @@ if [ "$(uname 2> /dev/null)" != "Linux" ]; then
 	. /usr/local/anaconda3/etc/profile.d/conda.sh
 else
 	export PATH=/home/webdizz/anaconda3/bin:"$PATH"
+	# DL box
+	export CUDA_VERSION=9.1
+	export PATH=/usr/local/cuda-${CUDA_VERSION}/bin${PATH:+:${PATH}}
+	export LD_LIBRARY_PATH=/usr/local/cuda-${CUDA_VERSION}/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 fi
