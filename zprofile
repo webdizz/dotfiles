@@ -5,7 +5,7 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-#alias ll='ls -la'
+alias ll='ls -la'
 alias ctail='grc tail'
 alias em='emacs'
 alias emd='emacs --daemon'
@@ -23,3 +23,5 @@ else
 fi
 
 . /usr/local/anaconda3/etc/profile.d/conda.sh
+
+export LC_ALL="en_US.UTF-8"
