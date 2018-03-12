@@ -83,5 +83,6 @@ source ~/.sdkman/bin/sdkman-init.sh
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+
 # Tell grep to highlight matches
-export GREP_OPTIONS='--color=auto'
+alias grep="grep --color=auto"
