@@ -8,6 +8,5 @@ if [ "$(uname 2> /dev/null)" != "Linux" ]; then
 	$HOME/.vscode/install_extensions.sh
 else
 	# Nothing here for Linux for now
-	echo "iNothing to install for Linux yet"
+	echo "Nothing to install for Linux yet"
 fi
-
