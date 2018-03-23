@@ -19,4 +19,4 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout "$cert_base_path/$cert_name.key" -out "$cert_base_path/$cert_name.crt" \
     -subj "/C=UA/ST=Kyiv/L=Kyiv/O=$cert_name/CN=$cert_name"
 
-#openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+openssl dhparam -out "$cert_base_path/$cert_name.dhparam.pem" 2048
