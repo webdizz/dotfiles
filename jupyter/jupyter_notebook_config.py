@@ -226,7 +226,7 @@
 #    from notebook.auth import passwd; passwd()
 #  
 #  The string should be of the form type:salt:hashed-password.
-c.NotebookApp.password = 'sha1:b52167711469:a34ecca2029bf00e2b1bcfdb84e7bfee8c8d7f70'
+#c.NotebookApp.password = 'sha1:b52167711469:a34ecca2029bf00e2b1bcfdb84e7bfee8c8d7f70'
 
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
