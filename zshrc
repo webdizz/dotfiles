@@ -26,3 +26,4 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # added by travis gem
 [ -f /Users/webdizz/.travis/travis.sh ] && source /Users/webdizz/.travis/travis.sh
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
