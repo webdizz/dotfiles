@@ -16,18 +16,9 @@
   trustctime = false
   editor = vim
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
 [push]
   default = matching
-[merge]
-  tool = extMerge
-[mergetool "extMerge"]
-  cmd = ~/dev/tools/bin/extMerge.sh \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
-[mergetool "sourcetree"]
-  cmd = /Applications/Utils/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
 
 [credential]
 	helper = osxkeychain
@@ -74,6 +65,7 @@
   b = branch -v                     # branch (verbose)
   ba = branch -a
   bd = branch -d
+  bD = branch -D
   br = branch -r
 
   # commit
@@ -137,7 +129,6 @@
   psot = push origin --tags
   psom = push origin master
   psod = push origin develop
-  psov = push origin vm
 
   # rebase
   rc = rebase --continue            # continue rebase
@@ -217,5 +208,9 @@
 
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-# [http]
-# 	proxy = proxy:8080
+
+[mergetool "kdiff3"]
+	trustExitCode = false
+	path = /usr/local/bin/kdiff3
+[merge]
+	tool = kdiff3
