@@ -22,6 +22,7 @@ for ext in 'christian-kohler.path-intellisense' \
             'xyz.plsql-language' \
             'donjayamanne.jupyter' \
             'mathiasfrohlich.kotlin' \
+            'arjun.swagger-viewer' \
             'formulahendry.terminal' \; do
     code  --install-extension "$ext"
 done
