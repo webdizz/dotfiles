@@ -23,6 +23,7 @@ for ext in 'christian-kohler.path-intellisense' \
             'donjayamanne.jupyter' \
             'mathiasfrohlich.kotlin' \
             'arjun.swagger-viewer' \
+            'rafaelmaiolla.remote-vscode' \
             'formulahendry.terminal' \; do
     code  --install-extension "$ext"
 done
