@@ -11,6 +11,7 @@ alias em='emacs'
 alias emd='emacs --daemon'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
+alias dc='docker-compose'
 
 if [ "$(uname 2> /dev/null)" != "Linux" ]; then
 	alias j8='export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"; export PATH="${JAVA_HOME}/bin:$PATH"'
