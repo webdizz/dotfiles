@@ -24,6 +24,7 @@ for ext in 'christian-kohler.path-intellisense' \
             'mathiasfrohlich.kotlin' \
             'arjun.swagger-viewer' \
             'rafaelmaiolla.remote-vscode' \
+            'liximomo.remotefs' \
             'formulahendry.terminal' \; do
     code  --install-extension "$ext"
 done
