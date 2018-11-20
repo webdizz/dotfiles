@@ -7,7 +7,9 @@
     "toc2/main": true,
     "collapsible_headings/main": true,
     "limit_output/main": false,
-    "codefolding/main": true
+    "codefolding/main": true,
+    "navigation-hotkeys/main": true,
+    "runtools/main": true
   },
   "autopep8": {
     "hotkeys": {
