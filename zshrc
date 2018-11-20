@@ -24,9 +24,6 @@ compinit
 # for Ubuntu there is no package, it can be installed like this:  sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/local/share/zsh-autosuggestions/
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# git sync
-source ~/.dotfiles/git-sync.zsh
-
 # added by travis gem
 [ -f /Users/webdizz/.travis/travis.sh ] && source /Users/webdizz/.travis/travis.sh
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
