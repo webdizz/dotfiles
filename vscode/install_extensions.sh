@@ -4,7 +4,7 @@
 for ext in 'christian-kohler.path-intellisense' \
             'PeterJausovec.vscode-docker' \
             'codezombiech.gitignore' \
-            'donjayamanne.python' \
+            'ms-python.python' \
             'HookyQR.beautify' \
             'lukehoban.go' \
             'redhat.java' \
@@ -23,8 +23,9 @@ for ext in 'christian-kohler.path-intellisense' \
             'donjayamanne.jupyter' \
             'mathiasfrohlich.kotlin' \
             'arjun.swagger-viewer' \
-            'rafaelmaiolla.remote-vscode' \
-            'liximomo.remotefs' \
+	    'vscoss.vscode-ansible' \
+	    'eamodio.gitlens' \
+	    'vscode-ext.sync-rsync' \
             'formulahendry.terminal' \; do
     code  --install-extension "$ext"
 done
