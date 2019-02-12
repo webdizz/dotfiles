@@ -23,9 +23,11 @@ for ext in 'christian-kohler.path-intellisense' \
             'donjayamanne.jupyter' \
             'mathiasfrohlich.kotlin' \
             'arjun.swagger-viewer' \
-	    'vscoss.vscode-ansible' \
-	    'eamodio.gitlens' \
-	    'vscode-ext.sync-rsync' \
+            'vscoss.vscode-ansible' \
+            'eamodio.gitlens' \
+            'vscode-ext.sync-rsync' \
+            'platformio-ide' \
+            'formulahendry.platformio' \
             'formulahendry.terminal' \; do
     code  --install-extension "$ext"
 done
