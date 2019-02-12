@@ -214,3 +214,7 @@
 	path = /usr/local/bin/kdiff3
 [merge]
 	tool = kdiff3
+[credential "https://source.developers.google.com"]
+	helper = gcloud.sh
+[diff "sopsdiffer"]
+	textconv = sops -d
