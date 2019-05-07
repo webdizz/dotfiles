@@ -20,7 +20,7 @@ if [ "$(uname 2> /dev/null)" != "Linux" ]; then
 	alias j9='export JAVA_HOME="`/usr/libexec/java_home -v 9`"; export PATH="${JAVA_HOME}/bin:$PATH"'
 else
 	# DL box
-	export CUDA_VERSION=10.0
+	export CUDA_VERSION=10.1
 	export PATH=/usr/local/cuda-${CUDA_VERSION}/bin${PATH:+:${PATH}}
 	export LD_LIBRARY_PATH=/usr/local/cuda-${CUDA_VERSION}/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 fi
