@@ -2,7 +2,6 @@
 # Install all VSCode extensions from given string
 
 for ext in 'christian-kohler.path-intellisense' \
-            'PeterJausovec.vscode-docker' \
             'codezombiech.gitignore' \
             'ms-python.python' \
             'HookyQR.beautify' \
@@ -28,6 +27,7 @@ for ext in 'christian-kohler.path-intellisense' \
             'vscode-ext.sync-rsync' \
             'platformio-ide' \
             'formulahendry.platformio' \
-            'formulahendry.terminal' \; do
-    code  --install-extension "$ext"
+            'formulahendry.terminal'; 
+do
+code --install-extension $ext
 done
