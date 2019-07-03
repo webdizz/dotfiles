@@ -27,6 +27,7 @@ for ext in 'christian-kohler.path-intellisense' \
             'vscode-ext.sync-rsync' \
             'platformio-ide' \
             'formulahendry.platformio' \
+            'platformio.platformio-ide' \
             'formulahendry.terminal'; 
 do
 code --install-extension $ext
