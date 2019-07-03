@@ -34,4 +34,8 @@ if [ -f '/Users/webdizz/.google-cloud-sdk/path.zsh.inc' ]; then source '/Users/w
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/webdizz/.google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/webdizz/.google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+if [ -d '/usr/local/opt/mysql-client/bin' ]; then export PATH="/usr/local/opt/mysql-client/bin:$PATH"; fi
+
+
+if [ -d '/usr/local/miniconda3/bin' ]; then export PATH="/usr/local/miniconda3/bin:$PATH"; fi
