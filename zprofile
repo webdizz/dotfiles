@@ -9,6 +9,7 @@ alias emd='emacs --daemon'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
 alias dc='docker-compose'
+alias dcr='docker'
 alias kc='kubectl'
 alias tf='terraform'
 
