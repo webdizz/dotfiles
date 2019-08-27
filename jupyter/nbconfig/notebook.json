@@ -9,7 +9,8 @@
     "limit_output/main": false,
     "codefolding/main": true,
     "navigation-hotkeys/main": true,
-    "runtools/main": true
+    "runtools/main": true,
+    "scratchpad/main": true
   },
   "autopep8": {
     "hotkeys": {
