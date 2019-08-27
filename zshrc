@@ -1,9 +1,6 @@
 #
 # Executes commands at the start of an interactive session.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -28,7 +25,6 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f /Users/webdizz/.travis/travis.sh ] && source /Users/webdizz/.travis/travis.sh
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/webdizz/.google-cloud-sdk/path.zsh.inc' ]; then source '/Users/webdizz/.google-cloud-sdk/path.zsh.inc'; fi
 
@@ -38,4 +34,22 @@ if [ -f '/Users/webdizz/.google-cloud-sdk/completion.zsh.inc' ]; then source '/U
 if [ -d '/usr/local/opt/mysql-client/bin' ]; then export PATH="/usr/local/opt/mysql-client/bin:$PATH"; fi
 
 
-if [ -d '/usr/local/miniconda3/bin' ]; then export PATH="/usr/local/miniconda3/bin:$PATH"; fi
+if [ -d '/usr/local/miniconda3/bin' ]; then 
+    export PATH="/usr/local/miniconda3/bin:$PATH"; 
+    . /usr/local/miniconda3/etc/profile.d/conda.sh;
+fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<

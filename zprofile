@@ -1,9 +1,6 @@
 #
 # Executes commands at login pre-zshrc.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
 alias ll='ls -la'
 alias ctail='grc tail'
@@ -24,7 +21,5 @@ else
 	export PATH=/usr/local/cuda-${CUDA_VERSION}/bin${PATH:+:${PATH}}
 	export LD_LIBRARY_PATH=/usr/local/cuda-${CUDA_VERSION}/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 fi
-
-. /usr/local/anaconda3/etc/profile.d/conda.sh
 
 export LC_ALL="en_US.UTF-8"
