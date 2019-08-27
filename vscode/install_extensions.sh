@@ -19,15 +19,15 @@ for ext in 'christian-kohler.path-intellisense' \
             'vscjava.vscode-java-pack' \
             'sensourceinc.vscode-sql-beautify' \
             'xyz.plsql-language' \
-            'donjayamanne.jupyter' \
             'mathiasfrohlich.kotlin' \
             'arjun.swagger-viewer' \
             'vscoss.vscode-ansible' \
             'eamodio.gitlens' \
-            'vscode-ext.sync-rsync' \
             'platformio-ide' \
             'formulahendry.platformio' \
             'platformio.platformio-ide' \
+	        'austin.code-gnu-global' \
+	        'ms-vscode-remote.remote-ssh' \
             'formulahendry.terminal'; 
 do
 code --install-extension $ext
