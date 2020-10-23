@@ -219,3 +219,5 @@
 	helper = gcloud.sh
 [diff "sopsdiffer"]
 	textconv = sops -d
+[http]
+	sslVerify = true
