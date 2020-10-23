@@ -86,3 +86,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # Tell grep to highlight matches
 alias grep="grep --color=auto"
+
+# Docker Compose shortcuts
+alias dc="docker-compose"
+alias dcup="docker-compose up --force-recreate --renew-anon-volumes"
