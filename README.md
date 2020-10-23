@@ -10,8 +10,9 @@ It's better to clone with recursive option to not to forget about git submodules
 
 ```bash
     git clone --recursive https://github.com/webdizz/dotfiles .dotfiles
-    ./script/setup
+    cd .dotfiles && ./script/setup
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" # for Ubuntu
+    cd ~/[.linuxbrew-brewfile|.homebrew-brewfile] && brew bundle
 ```
 
 TODO
