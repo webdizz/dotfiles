@@ -10,6 +10,8 @@ It's better to clone with recursive option to not to forget about git submodules
 
 ```bash
     git clone --recursive https://github.com/webdizz/dotfiles .dotfiles
+    ./script/setup
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" # for Ubuntu
 ```
 
 TODO
