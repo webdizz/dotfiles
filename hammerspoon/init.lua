@@ -1,3 +1,4 @@
+local log = hs.logger.new('custom','debug')
 local hyperKey = {"cmd", "ctrl", "alt", "shift"}
 
 -- move to left by 50
@@ -58,6 +59,7 @@ hs.hotkey.bind(hyperKey, "t", function()
     f.h = max.h / 2
     f.w = max.w / 2
     win:setFrame(f)
+    log.i('resize to 1/4 and stick to right top corner')
 end)
 
 -- resize to 1/4 and stick to left bottom corner
@@ -133,3 +135,16 @@ end)
 
 -- Notify about the config reload
 hs.notify.new({title="Hammerspoon", informativeText="Config reloaded"}):send()
+
+
+function moveWindowToDisplay(d)
+    return function()
+        local displays = hs.screen.allScreens()
+        local win = hs.window.focusedWindow()
+        win:moveToScreen(displays[d], false, true)
+    end
+end
+  
+hs.hotkey.bind(hyperKey, "1", moveWindowToDisplay(1))
+hs.hotkey.bind(hyperKey, "2", moveWindowToDisplay(2))
+hs.hotkey.bind(hyperKey, "3", moveWindowToDisplay(3))
