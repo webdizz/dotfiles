@@ -54,7 +54,7 @@ hs.hotkey.bind(hyperKey, "t", function()
     local max = screen:frame()
 
     f.y = 0
-    f.x = f.x + max.w / 2
+    f.x = max.w / 2
     f.h = max.h / 2
     f.w = max.w / 2
     win:setFrame(f)
@@ -67,7 +67,7 @@ hs.hotkey.bind(hyperKey, "c", function()
     local screen = win:screen()
     local max = screen:frame()
 
-    f.y = f.y + max.h / 2
+    f.y = max.h / 2 + 26
     f.x = 0
     f.h = max.h / 2
     f.w = max.w / 2
@@ -81,8 +81,8 @@ hs.hotkey.bind(hyperKey, "v", function()
     local screen = win:screen()
     local max = screen:frame()
 
-    f.y = f.y + max.h / 2
-    f.x = f.x + max.w / 2
+    f.y = max.h / 2 + 26
+    f.x = max.w / 2
     f.h = max.h / 2
     f.w = max.w / 2
     win:setFrame(f)
@@ -111,7 +111,7 @@ hs.hotkey.bind(hyperKey, "g", function()
     win:setFrame(f)
 end)
 
--- resize to full screen
+-- resize to fit into full screen size
 hs.hotkey.bind(hyperKey, "f", function()
     local win = hs.window.focusedWindow()
     local f = win:frame()
@@ -124,3 +124,12 @@ hs.hotkey.bind(hyperKey, "f", function()
     f.h = max.h
     win:setFrame(f)
 end)
+
+
+-- We use 0 to reload the configuration
+hs.hotkey.bind(hyperKey, "0", function()
+    hs.reload()
+end)
+
+-- Notify about the config reload
+hs.notify.new({title="Hammerspoon", informativeText="Config reloaded"}):send()
