@@ -59,7 +59,9 @@ hs.hotkey.bind(hyperKey, "t", function()
     f.h = max.h / 2
     f.w = max.w / 2
     win:setFrame(f)
-    log.i('resize to 1/4 and stick to right top corner')
+    local screenName = screen:name()
+
+    log.i('resize to 1/4 and stick to right top corner' .. 'dddddd' .. screenName)
 end)
 
 -- resize to 1/4 and stick to left bottom corner
@@ -88,6 +90,7 @@ hs.hotkey.bind(hyperKey, "v", function()
     f.h = max.h / 2
     f.w = max.w / 2
     win:setFrame(f)
+    
 end)
 
 -- resize to half and move to left
@@ -127,7 +130,6 @@ hs.hotkey.bind(hyperKey, "f", function()
     win:setFrame(f)
 end)
 
-
 -- We use 0 to reload the configuration
 hs.hotkey.bind(hyperKey, "0", function()
     hs.reload()
@@ -146,5 +148,5 @@ function moveWindowToDisplay(d)
 end
   
 hs.hotkey.bind(hyperKey, "1", moveWindowToDisplay(1))
-hs.hotkey.bind(hyperKey, "2", moveWindowToDisplay(2))
-hs.hotkey.bind(hyperKey, "3", moveWindowToDisplay(3))
+hs.hotkey.bind(hyperKey, "2", moveWindowToDisplay(3))
+hs.hotkey.bind(hyperKey, "3", moveWindowToDisplay(2))
