@@ -221,3 +221,5 @@
 	textconv = sops -d
 [http]
 	sslVerify = true
+[init]
+	defaultBranch = main

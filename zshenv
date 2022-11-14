@@ -90,3 +90,5 @@ alias grep="grep --color=auto"
 # Docker Compose shortcuts
 alias dc="docker-compose"
 alias dcup="docker-compose up --force-recreate --renew-anon-volumes"
+
+export READ_PACKAGES_PAT="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"

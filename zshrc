@@ -36,19 +36,19 @@ if [ -d '/usr/local/opt/mysql-client/bin' ]; then export PATH="/usr/local/opt/my
 
 if [ -d '/usr/local/miniconda3/bin' ]; then 
     export PATH="/usr/local/miniconda3/bin:$PATH"; 
-    . /usr/local/miniconda3/etc/profile.d/conda.sh;
+# . /usr/local/miniconda3/etc/profile.d/conda.sh;  # commented out by conda initialize
 fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/usr/local/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
     else
-        export PATH="/usr/local/miniconda3/bin:$PATH"
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -57,3 +57,7 @@ unset __conda_setup
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/webdizz/.sdkman"
 [[ -s "/Users/webdizz/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/webdizz/.sdkman/bin/sdkman-init.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="${HOME}/.nodenv/shims:$PATH:/usr/local/share/dotnet"

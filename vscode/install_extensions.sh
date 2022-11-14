@@ -28,6 +28,7 @@ for ext in 'christian-kohler.path-intellisense' \
             'platformio.platformio-ide' \
 	        'austin.code-gnu-global' \
 	        'ms-vscode-remote.remote-ssh' \
+            'esbenp.prettier-vscode' \
             'formulahendry.terminal'; 
 do
 code --install-extension $ext
