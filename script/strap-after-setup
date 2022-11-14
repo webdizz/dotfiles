@@ -8,6 +8,7 @@ script/install_java_eco.sh
 if [ "$(uname 2> /dev/null)" != "Linux" ]; then
     # MacOS related 
 	script/install-vscode-extensions
+	script/macos
 else
 	# Nothing here for Linux for now
 	echo "Nothing to install for Linux yet"
