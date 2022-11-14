@@ -74,13 +74,6 @@ if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
 
-#
-# Customizations
-#
-#export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/dev/tools/oracle/client
-#source "/Users/${USER}/dev/pdotfiles/env.sh"
-source ~/.sdkman/bin/sdkman-init.sh
-
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
@@ -90,5 +83,3 @@ alias grep="grep --color=auto"
 # Docker Compose shortcuts
 alias dc="docker-compose"
 alias dcup="docker-compose up --force-recreate --renew-anon-volumes"
-
-export READ_PACKAGES_PAT="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"

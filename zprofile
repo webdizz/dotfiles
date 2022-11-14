@@ -2,7 +2,6 @@
 # Executes commands at login pre-zshrc.
 #
 
-alias ll='ls -la'
 alias ctail='grc tail'
 alias em='emacs'
 alias emd='emacs --daemon'
@@ -14,8 +13,7 @@ alias kc='kubectl'
 alias tf='terraform'
 
 if [ "$(uname 2> /dev/null)" != "Linux" ]; then
-	alias j8='export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"; export PATH="${JAVA_HOME}/bin:$PATH"'
-	alias j9='export JAVA_HOME="`/usr/libexec/java_home -v 9`"; export PATH="${JAVA_HOME}/bin:$PATH"'
+	# nothing here
 else
 	# DL box
 	export CUDA_VERSION=10.1
