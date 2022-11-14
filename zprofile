@@ -7,7 +7,10 @@ alias em='emacs'
 alias emd='emacs --daemon'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
+# Docker Compose shortcuts
 alias dc='docker-compose'
+alias dcup='docker-compose up --force-recreate --renew-anon-volumes'
+
 alias dcr='docker'
 alias kc='kubectl'
 alias tf='terraform'
