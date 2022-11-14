@@ -18,6 +18,8 @@ alias tf='terraform'
 if [ "$(uname 2> /dev/null)" != "Linux" ]; then
 	# nothing here
 else
+	# for Ubuntu there is no package, it can be installed like this:  sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/local/share/zsh-autosuggestions/
+	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 	# DL box
 	export CUDA_VERSION=10.1
 	export PATH=/usr/local/cuda-${CUDA_VERSION}/bin${PATH:+:${PATH}}
