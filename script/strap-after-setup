@@ -1,0 +1,27 @@
+#!/bin/sh
+# Run by Strap after installing Brewfile dependencies
+
+cd $(dirname $0)/..
+
+script/install_java_eco.sh
+
+if [ "$(uname 2> /dev/null)" != "Linux" ]; then
+    # MacOS related 
+	script/install-vscode-extensions
+else
+	# Nothing here for Linux for now
+	echo "Nothing to install for Linux yet"
+fi
+
+echo "Pull submodules for .files (Vundle, zprezto, etc)"
+git submodule update --init --recursive
+
+# setup vim plugins
+echo "Trigger Vim plugins installation"
+vim +PluginInstall +qall
+
+# Use ZSH as my default Shell
+if [ "$SHELL" != "/bin/zsh" ]
+then
+  chsh -s /bin/zsh webdizz
+fi
