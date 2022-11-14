@@ -138,7 +138,6 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -148,7 +147,7 @@ set number
 filetype on
 set nowrap
 
-"set background=dark
-set background=light
+set background=dark
+"set background=light
 "colorscheme ir_black
 colorscheme solarized
