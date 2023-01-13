@@ -87,7 +87,7 @@
 
   # checkout
   co = checkout                     # checkout
-  com = checkout master       # checkout master
+  com = checkout main       # checkout main
   cod = checkout develop            # checkout develop
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
 
@@ -114,21 +114,20 @@
   # pull
   pl = pull                         # pull
   plo = pull origin
-  plom = pull origin master
-  plum = pull upstream master
+  plom = pull origin main
+  plum = pull upstream main
   plod = pull origin develop
   pr = pull --rebase
   pro = pull --rebase origin
-  prom = pull --rebase origin master
+  prom = pull --rebase origin main
   prod = pull --rebase origin develop
-  prov = pull --rebase origin vm
   prgd = pull --rebase gerrit develop
 
   # push
   ps = push                         # push
   pso = push origin
   psot = push origin --tags
-  psom = push origin master
+  psom = push origin main
   psod = push origin develop
 
   # rebase
@@ -152,7 +151,7 @@
   ma = merge --abort
   mc = merge --continue
   ms = merge --skip
-  mm = merge master
+  mm = merge main
   md = merge develop
 
   fk = fsck
