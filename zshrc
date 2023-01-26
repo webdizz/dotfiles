@@ -31,6 +31,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="${HOME}/.nodenv/shims:$PATH"
+export PATH="${HOME}/dev/.epam-cloud-maestro-cli/bin:$PATH"
+export PATH="$PATH:${HOME}/.dotnet/tools"
+
+export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet@6/libexec"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
