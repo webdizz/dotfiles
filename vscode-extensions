@@ -28,3 +28,4 @@ ms-vscode-remote.remote-ssh
 esbenp.prettier-vscode
 formulahendry.terminal
 dbaeumer.vscode-eslint
+ms-mssql.mssql
