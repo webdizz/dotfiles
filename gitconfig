@@ -89,6 +89,7 @@
   co = checkout                     # checkout
   com = checkout main       # checkout main
   cod = checkout develop            # checkout develop
+  cor = checkout release            # checkout release
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
 
   # cherry-pick
@@ -121,6 +122,7 @@
   pro = pull --rebase origin
   prom = pull --rebase origin main
   prod = pull --rebase origin develop
+  pror = pull --rebase origin release
   prgd = pull --rebase gerrit develop
 
   # push
@@ -129,6 +131,7 @@
   psot = push origin --tags
   psom = push origin main
   psod = push origin develop
+  psor = push origin release
 
   # rebase
   rc = rebase --continue            # continue rebase
@@ -153,6 +156,7 @@
   ms = merge --skip
   mm = merge main
   md = merge develop
+  mr = merge release
 
   fk = fsck
   # reset
