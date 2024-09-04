@@ -26,8 +26,8 @@ hs.hotkey.bind(hyperKey, "a", function()
     local screen = win:screen()
     local max = screen:frame()
 
-    f.x = 0
-    f.y = 0
+    f.x = max.x
+    f.y = max.y
     f.w = max.w / 2
     f.h = max.h
     win:setFrame(f)
@@ -54,14 +54,12 @@ hs.hotkey.bind(hyperKey, "t", function()
     local screen = win:screen()
     local max = screen:frame()
 
-    f.y = 0
-    f.x = max.w / 2
-    f.h = max.h / 2
+    f.x = max.x + (max.w / 2)
+    f.y = max.y
     f.w = max.w / 2
+    f.h = max.h / 2
     win:setFrame(f)
     local screenName = screen:name()
-
-    log.i('resize to 1/4 and stick to right top corner' .. 'dddddd' .. screenName)
 end)
 
 -- resize to 1/4 and stick to left bottom corner
@@ -71,10 +69,10 @@ hs.hotkey.bind(hyperKey, "c", function()
     local screen = win:screen()
     local max = screen:frame()
 
-    f.y = max.h / 2 + 26
-    f.x = 0
-    f.h = max.h / 2
+    f.x = max.x
+    f.y = max.y + (max.h / 2)
     f.w = max.w / 2
+    f.h = max.h / 2
     win:setFrame(f)
 end)
 
@@ -85,12 +83,11 @@ hs.hotkey.bind(hyperKey, "v", function()
     local screen = win:screen()
     local max = screen:frame()
 
-    f.y = max.h / 2 + 26
-    f.x = max.w / 2
-    f.h = max.h / 2
+    f.x = max.x + (max.w / 2)
+    f.y = max.y + (max.h / 2)
     f.w = max.w / 2
+    f.h = max.h / 2
     win:setFrame(f)
-    
 end)
 
 -- resize to half and move to left
@@ -110,7 +107,7 @@ hs.hotkey.bind(hyperKey, "g", function()
     local max = screen:frame()
 
     f.x = max.x + max.w / 2
-    f.y = 0
+    f.y = max.y
     f.w = max.w / 2
     f.h = max.h
     win:setFrame(f)
@@ -150,3 +147,20 @@ end
 hs.hotkey.bind(hyperKey, "1", moveWindowToDisplay(1))
 hs.hotkey.bind(hyperKey, "2", moveWindowToDisplay(3))
 hs.hotkey.bind(hyperKey, "3", moveWindowToDisplay(2))
+
+-- resize window horizontally by 10%
+hs.hotkey.bind(hyperKey, "j", function()
+    local win = hs.window.focusedWindow()
+    local f = win:frame()
+
+    f.w = f.w * 0.9
+    win:setFrame(f)
+end)
+-- resize window horizontally by 10%
+hs.hotkey.bind(hyperKey, "h", function()
+    local win = hs.window.focusedWindow()
+    local f = win:frame()
+
+    f.w = f.w + f.w * 0.1
+    win:setFrame(f)
+end)
